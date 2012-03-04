@@ -1,0 +1,729 @@
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,1396671,4,0,0,0,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('http://s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1396671&101" alt="contador web" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+<script language="JavaScript">
+    <!--
+    window.moveTo(0,0);
+    self.focus();
+    -->
+</script>
+<SCRIPT LANGUAGE="JavaScript" SRC="../../../expandcollapse.js"></SCRIPT>
+
+<script type="text/javascript">
+var i, j, digiclock
+digiclock = "00:00:00";
+j = 0;
+function prog()
+{
+  document.getElementById("d1").innerHTML="";	
+  document.getElementById("d2").style.width=0;  
+  i=0;
+  progBar(); 
+}
+
+function progBar()
+{
+	if (i<=(500)) {
+		if (i>50) {
+			document.getElementById("d1").innerHTML=parseInt(i/5)+"%";
+		}
+		document.getElementById("d2").style.width=i+"px";
+		var j=0;		
+		while (j<=100)
+			j++;  
+		setTimeout("progBar();", 1000); 
+		i++;   
+	}
+	else {
+		if (document.getElementById('prepage').style.display != 'none') {
+			document.getElementById('prepage').style.display='none';
+			alert('Se excedió el tiempo máximo permitido para la consulta. Reitente en instantes por favor.');
+		}
+	}
+}
+
+function timer()
+{
+    var digiformat = "";
+	if(j>3599)
+	{
+		var H = Math.floor(j/3600);
+	}
+	else
+	{
+		var H = 0;
+	}
+	
+	var M = j - (H*3600)
+	
+	if(M>59)
+	{
+		M = Math.floor(M/60)
+	}
+	else
+	{
+		M = 0
+	}	
+	var S = j - (M*60)	
+	if(H<10)
+	{
+		H = "0"+H;
+	}
+	if(M<10)
+	{
+		M = "0"+M;
+	}
+	if(S<10)
+	{
+		S = "0"+S;
+	}
+	document.getElementById('time').innerHTML = H+":"+M+":"+S;
+    setTimeout('timer()', 1000);
+    j++;
+}
+</script>
+<!--div align=center id="prepage" style="filter:alpha(opacity=90);top:155px;position:absolute;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;"-->
+<div align=center id="prepage" style="position:absolute;top:142px;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;">
+<center>
+    <img src="/dgip/images/pixel.gif" border="0" height="20"><br />
+    <table border="1" style="border-style:groove;border-width:thin;width:420px;border-color:Scrollbar;" ID="Table1" cellspacing="0">
+      <tr>
+	    <td align="center">
+	      <p><font face="Arial" size=2><strong>Sistema de Información Parlamentaria (SipXXI)</strong></font><br /><br />
+	      <img src="/dgip/images/cargandochico.gif" border="0" align=absmiddle /><font face="Arial" size=1><strong>&nbsp;Aguarde, la página por Ud consultada, está siendo procesada ....<br></font><font face="Arial" size=1><span id="time">90</span></font></p>
+	      <!--p><font face="Arial" size=1>Si tiene algún tipo de inconveniente al cargar esta página, le rogamos nos lo haga saber enviando un correo a <a href="mailto:webmaster@parlamento.gub.uy">webmaster@parlamento.gub.uy</a>. Muchas gracias.</font></p-->
+	    </td>
+      </tr>
+    </table>
+    <!--table border="1" cellpadding="1" cellspacing="0" width="50%" ID="Table2">  
+      <tr><td align=left>
+	    <div id="d2" style="position:relative;top:0px;left:0px;background-color:#408080;height:12px;width:0px;padding-top:5px;padding:0px;border-width:thin;">
+	    <div id="d1" style="position:relative;top:0px;left:0px;color:#f0ffff;height:12px;text-align:center;font:bold;padding:0px;padding-top:3px;border-width:thin;">
+	    </td>
+      </tr>
+    </table><br-->
+    <table border="0" cellpadding="1" cellspacing="0" width="65%">
+	    <tr><td align=left>
+		    <div id="MensajeProceso" style="display:none;position:relative;top:0px;left:0px;font-family:Arial;font-size:11px;color:#006699;height:11px;text-align:center;font-weight:bold;padding:0px;padding-top:3px;">&nbsp;</div>
+	    </td></tr>
+    </table><br>
+    <!--img src="/dgip/images/linea2.gif" border="0"><br /-->
+</center>
+</div>
+<!--script type="text/javascript">
+	prog();
+</script-->
+<script type="text/javascript">
+	timer();
+</script>
+<DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDERCOLORDARK="#000000" BORDERCOLORLIGHT="#000000" BORDERCOLOR="#FFFFFF">
+<TR>
+<TD VALIGN=TOP WIDTH="95%" ALIGN=CENTER BGCOLOR="#000000">
+<A HREF="javascript:window.close()">
+<IMG SRC="../../../images/cabcms.gif" ALT="Cerrar ventana" ALIGN=LEFT BORDER=0></A>
+</TD>
+
+<TD WIDTH="5%" ALIGN=CENTER VALIGN=CENTER BGCOLOR="#000000">
+<DIV ALIGN=CENTER><A HREF="javascript:void(printwindow())"><IMG SRC="../../../palacio3/img/b_print_2.gif" BORDER=0 TITLE="Imprimir página actual"></A></DIV>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP COLSPAN=2 WIDTH="100%" ALIGN=CENTER>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Inicializando ...';
+</script>
+<HTML>
+<HEAD>
+<META name="robots" content="noindex">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<META http-equiv="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT">
+<STYLE TYPE="text/css">
+<!--
+BODY {font:9pt Arial; color:black; font-weight:normal;}
+TBODY {font:9pt Arial; color:black; font-weight:normal;}
+A:link {font:9pt Arial;  color:#006699; font-weight:normal; text-decoration:none;}
+A:visited {font:9pt Arial; color:#006699; font-weight:normal; text-decoration:none;}
+H1 {font:14pt Arial; color:black; font-weight:bold;}
+H2 {font:12pt Arial; color:black; font-weight:bold;}
+H3 {font:9pt Arial; color:black; font-weight:bold;}
+H4 {font:7pt Arial; color:black; font-weight:bold;}
+.boton{background:#006699;color:#FFFFFF;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.box{background:#FFFFFF;color:#000000;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.select{background:#9FBCAB;color:#006699;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+-->
+</STYLE>
+<TITLE>
+Sistema de Informaci&#243;n Parlamentaria
+</TITLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="validate-date.js"></SCRIPT>
+<script language="JavaScript" src="../rightbutton.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#006699" VLINK="#006699" TEXT="#000000">
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Contabilizando Sesiones ...';
+</script>
+<CENTER>
+<STRONG><FONT SIZE=3>ASISTENCIA A SESIONES</FONT></STRONG>
+</CENTER><BR>
+<CENTER>
+<STRONG><FONT SIZE=1>Período considerado: 01/01/2011 - 31/12/2011<br>63 sesiones. (Incluye titulares y suplentes)</FONT></STRONG>
+</CENTER><BR>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Consultando Sesiones ...';
+</script>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 68 del 24/01/2011';
+</script>
+<br><center><a href="/htmlstat/sesiones/pdfs/senado/20110124s0068.pdf" TARGET="_blank"><b>Sesión 68<br>Lunes 24 de enero de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Germán Cardoso, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Ramón Fonticiella, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Juan Antonio Chiruchi, Luis Alberto Heber, Luis Alberto Lacalle  Herrera y  Lucía Topolansky.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Alberto Couriel, Carlos Enciso Christiansen, Constanza Moreira y  Gustavo Penadés.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 69 del 10/02/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Pedro Bordaberry Herrán y  Francisco Gallinal.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110210s0069.pdf" TARGET="_blank"><b>Sesión 69<br>Jueves 10 de febrero de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, Milton Antognazza, Danilo Astori, Juan Pedro Bordaberry Herrán, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Ramón Fonticiella, Antonio Galichio, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Wilson Sanabria, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Juan Antonio Chiruchi, Luis Alberto Lacalle  Herrera y  Jorge Saravia.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 1 del 02/03/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: José Amorín, Carlos Baráibar, Eleuterio Fernández Huidobro, Daniel Carlos Martínez Villaamil y  Rafael Michelini.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110302s0001.pdf" TARGET="_blank"><b>Sesión 1<br>Mi&#233;rcoles 2 de marzo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Ramón Fonticiella <b>(1)</b>, Francisco Gallinal, Luis José Gallo Imperiale <b>(2)</b>, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 2 del 09/03/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro.<br><br><b>(1)</b> En el día de la fecha presenta renuncia a la banca de Senador.<br><b>(2)</b> Ingresa como Senador Titular en sustitución del señor Senador Ramón Fonticiella<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110309s0002.pdf" TARGET="_blank"><b>Sesión 2<br>Mi&#233;rcoles 9 de marzo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Juan Pedro Bordaberry Herrán <b>(1)</b>, Germán Cardoso <b>(2)</b>, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Juan C. Souza, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 3 del 15/03/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar y  Eleuterio Fernández Huidobro.<br><br><b>(1)</b> Con licencia a partir de la hora 11:56<br><b>(2)</b> Ingresó a la hora 11.56<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110315s0003.pdf" TARGET="_blank"><b>Sesión 3<br>Martes 15 de marzo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Germán Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Juan C. Souza, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 4 del 16/03/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Juan Pedro Bordaberry Herrán y  Eleuterio Fernández Huidobro.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110316s0004.pdf" TARGET="_blank"><b>Sesión 4<br>Mi&#233;rcoles 16 de marzo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, José Amorín, Milton Antognazza, Danilo Astori, Germán Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Rubén Martínez Huelmo, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Juan C. Souza, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Eduardo Lorier y  Alfredo Solari Damonte.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 5 del 22/03/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Carlos Baráibar, Juan Pedro Bordaberry Herrán y  Eleuterio Fernández Huidobro.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110322s0005.pdf" TARGET="_blank"><b>Sesión 5<br>Martes 22 de marzo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Germán Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Anibal Pereyra, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Luis Alberto Heber.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 6 del 29/03/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Juan Pedro Bordaberry Herrán, Eleuterio Fernández Huidobro, Daniel Carlos Martínez Villaamil y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110329s0006.pdf" TARGET="_blank"><b>Sesión 6<br>Martes 29 de marzo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Germán Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Oscar López Goldaracena, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Milton Antognazza.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 7 del 05/04/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Juan Pedro Bordaberry Herrán, Eleuterio Fernández Huidobro, Eduardo Lorier y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110405s0007.pdf" TARGET="_blank"><b>Sesión 7<br>Martes 5 de abril de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Oscar López Goldaracena, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 8 del 06/04/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: José Amorín, Eleuterio Fernández Huidobro, Eduardo Lorier y  Rodolfo Nin Novoa.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110406s0008.pdf" TARGET="_blank"><b>Sesión 8<br>Mi&#233;rcoles 6 de abril de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, Milton Antognazza <b>(1)</b>, Danilo Astori, Carlos Baráibar <b>(2)</b>, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Oscar López Goldaracena, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 9 del 12/04/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: José Amorín, Eleuterio Fernández Huidobro, Eduardo Lorier, Rafael Michelini y  Rodolfo Nin Novoa.<br><br><b>(1)</b> Ingresa a la hora 10.09<br><b>(2)</b> Con licencia a partir de la hora 10.09<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110412s0009.pdf" TARGET="_blank"><b>Sesión 9<br>Martes 12 de abril de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, Milton Antognazza <b>(1)</b>, Danilo Astori, Carlos Baráibar <b>(2)</b>, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis José Gallo Imperiale, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Oscar López Goldaracena, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Ope Pasquet Iribarne, Daniel Peña Fernández, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 10 del 26/04/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, José Amorín, Eduardo Lorier y  Rodolfo Nin Novoa.<br><br><b>(1)</b> Ingresa a la hora 9:45 <br><b>(2)</b> Con licencia a partir de la hora 9:45<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110426s0010.pdf" TARGET="_blank"><b>Sesión 10<br>Martes 26 de abril de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carmen Beramendi, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Alejandro Echeverría, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Guillermo García Costa, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ruben Obispo, Ope Pasquet Iribarne, Gustavo Penadés, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 11 del 03/05/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Susana Dalmás, Eleuterio Fernández Huidobro, Luis Alberto Lacalle  Herrera y  Enrique Rubio.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110503s0011.pdf" TARGET="_blank"><b>Sesión 11<br>Martes 3 de mayo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 12 del 03/05/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Couriel y  Eleuterio Fernández Huidobro.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110503s0012.pdf" TARGET="_blank"><b>Sesión 12<br>Martes 3 de mayo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Daniel Montiel y  Constanza Moreira.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 13 del 10/05/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Couriel y  Eleuterio Fernández Huidobro.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110510s0013.pdf" TARGET="_blank"><b>Sesión 13<br>Martes 10 de mayo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Eduardo Muguruza, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Sergio Abreu.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 14 del 11/05/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro y  Constanza Moreira.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110511s0014.pdf" TARGET="_blank"><b>Sesión 14<br>Mi&#233;rcoles 11 de mayo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Eduardo Muguruza, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Francisco Gallinal y  Luis Alberto Lacalle  Herrera.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 15 del 17/05/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro y  Constanza Moreira.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110517s0015.pdf" TARGET="_blank"><b>Sesión 15<br>Martes 17 de mayo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Alberto Couriel y  Eleuterio Fernández Huidobro <b>(1)</b>.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 16 del 31/05/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Mónica Xavier.<br><br><b>(1)</b> En el día de la fecha presentó renuncia a su Banca de Senador de la República<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110531s0016.pdf" TARGET="_blank"><b>Sesión 16<br>Martes 31 de mayo de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Alicia Pintos, Enrique Rubio, Wilson Sanabria, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Gustavo Penadés.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 17 del 01/06/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: José Amorín, Eduardo Lorier, Lucía Topolansky y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110601s0017.pdf" TARGET="_blank"><b>Sesión 17<br>Mi&#233;rcoles 1 de junio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Alicia Pintos, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Gustavo Penadés.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 18 del 07/06/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eduardo Lorier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110607s0018.pdf" TARGET="_blank"><b>Sesión 18<br>Martes 7 de junio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan José Bentancor, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Jorge Riani Baranzano, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Tabaré Viera Duarte.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 19 del 08/06/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Pedro Bordaberry Herrán, Eduardo Lorier, Rafael Michelini, Enrique Rubio y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110608s0019.pdf" TARGET="_blank"><b>Sesión 19<br>Mi&#233;rcoles 8 de junio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan José Bentancor, Juan Antonio Chiruchi, Alberto Couriel, Susana Dalmás, Antonio Gallicchio Queirolo, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Jorge Riani Baranzano, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Sergio Abreu, Eber Da Rosa y  Francisco Gallinal.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 20 del 14/06/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Pedro Bordaberry Herrán, Rafael Michelini, Enrique Rubio y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110614s0020.pdf" TARGET="_blank"><b>Sesión 20<br>Martes 14 de junio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ruben Obispo, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Luis Alberto Lacalle  Herrera.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 21 del 15/06/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Susana Dalmás.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110615s0021.pdf" TARGET="_blank"><b>Sesión 21<br>Mi&#233;rcoles 15 de junio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Martha Montaner, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ruben Obispo, Ope Pasquet Iribarne, Wilson Sanabria, Jorge Saravia, Héctor Tajam, Lucía Topolansky y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Eber Da Rosa y  Luis Alberto Lacalle  Herrera.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Gustavo Penadés y  Enrique Rubio.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 22 del 23/06/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Susana Dalmás, Alfredo Solari Damonte y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110623s0022.pdf" TARGET="_blank"><b>Sesión 22<br>Jueves 23 de junio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Reinaldo Gargano, Luis Alberto Heber, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Enrique Rubio, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Isaac Umansky y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Luis Alberto Lacalle  Herrera.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 23 del 05/07/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Alberto Couriel, Eduardo Lorier, Alfredo Solari Damonte y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110705s0023.pdf" TARGET="_blank"><b>Sesión 23<br>Martes 5 de julio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, Milton Antognazza, Juan José Bentancor, Germán Cardoso, Juan Antonio Chiruchi, Alberto Couriel <b>(1)</b>, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Aldo Lamorte, Jorge Larrañaga, Eduardo Lorier, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Martha Montaner, Daniel Montiel, Carlos Moreira, Eduardo Muguruza, Gustavo Penadés, Anibal Pereyra, Ana Lía Piñeyrúa Olmos, Wilson Sanabria, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Eber Da Rosa, Luis Alberto Lacalle  Herrera, Rafael Michelini, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Enrique Rubio y  Tabaré Viera Duarte.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 24 del 06/07/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Lucía Topolansky.<br><br><b>(1)</b> Presidente del Senado<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110706s0024.pdf" TARGET="_blank"><b>Sesión 24<br>Mi&#233;rcoles 6 de julio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, Carlos Baráibar, Juan José Bentancor, Germán Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Aldo Lamorte, Jorge Larrañaga, Eduardo Lorier, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz <b>(1)</b>, Ope Pasquet Iribarne, Gustavo Penadés, Aníbal Pereyra, Ana Lía Piñeyrúa Olmos, Wilson Sanabria, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky <b>(2)</b> y  Mónica Xavier <b>(3)</b>.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 25 del 12/07/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: José Amorín, Danilo Astori, Juan Pedro Bordaberry Herrán, Luis Alberto Lacalle  Herrera, Rafael Michelini, Rodolfo Nin Novoa, Enrique Rubio y  Tabaré Viera Duarte.<br><br><b>(1)</b> Ingresa a partir de las 13:30<br><b>(2)</b> En ejercicio de la Presidencia<br><b>(3)</b> Con licencia a partir de las 13:30<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110712s0025.pdf" TARGET="_blank"><b>Sesión 25<br>Martes 12 de julio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Germán Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Antonio Gallicchio Queirolo, Luis José Gallo Imperiale, Carlos Gamou, Jorge Larrañaga, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, León Morelli Colombres, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Ana Lía Piñeyrúa Olmos, Alicia Pintos, Ambrosio Rodríguez, Enrique Rubio, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Isaac Umansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 26 del 13/07/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Pedro Bordaberry Herrán, Francisco Gallinal, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Rafael Michelini, Alfredo Solari Damonte y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110713s0026.pdf" TARGET="_blank"><b>Sesión 26<br>Mi&#233;rcoles 13 de julio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Germán Cardoso, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Antonio Gallicchio Queirolo, Luis José Gallo Imperiale, Carlos Gamou, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Constanza Moreira, León Morelli Colombres, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Daniel Peña, Gustavo Penadés, Ana Lía Piñeyrúa Olmos, Alicia Pintos, Enrique Rubio, Jorge Saravia, Héctor Tajam, Lucía Topolansky y  Isaac Umansky.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Jorge Larrañaga, Carlos Moreira y  Ope Pasquet Iribarne.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 27 del 26/07/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Francisco Gallinal, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Rafael Michelini, Alfredo Solari Damonte, Tabaré Viera Duarte y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110726s0027.pdf" TARGET="_blank"><b>Sesión 27<br>Martes 26 de julio de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Jorge Larrañaga, Rubén Martínez Huelmo, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Luis Alberto Heber y  Luis Alberto Lacalle  Herrera.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 28 del 02/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Eduardo Lorier y  Rafael Michelini.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110802s0028.pdf" TARGET="_blank"><b>Sesión 28<br>Martes 2 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Jorge Gandini, Luis Alberto Lacalle  Herrera, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Enrique Rubio, Wilson Sanabria, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 29 del 03/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110803s0029.pdf" TARGET="_blank"><b>Sesión 29<br>Mi&#233;rcoles 3 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou <b>(1)</b>, Jorge Gandini, Luis Alberto Lacalle  Herrera, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Luis Rosadilla <b>(2)</b>, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 30 del 09/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Heber, Jorge Larrañaga y  Eduardo Lorier.<br><br><b>(1)</b> Ingresa a partir de la hora 09.44<br><b>(2)</b> Promete como Senador a la hora 09.41- Toma licencia a partir de la hora 09.44<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110809s0030.pdf" TARGET="_blank"><b>Sesión 30<br>Martes 9 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Javier García, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Enrique Rubio, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Isaac Umansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 31 del 10/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Luis Alberto Heber, Eduardo Lorier, Luis Rosadilla y  Alfredo Solari Damonte.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110810s0031.pdf" TARGET="_blank"><b>Sesión 31<br>Mi&#233;rcoles 10 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Rafael Michelini, Martha Montaner, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Enrique Rubio, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Isaac Umansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Carlos Moreira.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 32 del 16/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Pedro Bordaberry Herrán, Luis Alberto Heber, Eduardo Lorier, Luis Rosadilla y  Alfredo Solari Damonte.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110816s0032.pdf" TARGET="_blank"><b>Sesión 32<br>Martes 16 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, José Amorín, Danilo Astori, Carlos Baráibar, Jorge T. Bartesaghi, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Rubén Martínez Huelmo, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Saravia.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 33 del 17/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Luis Alberto Heber, Jorge Larrañaga y  Luis Rosadilla.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110817s0033.pdf" TARGET="_blank"><b>Sesión 33<br>Mi&#233;rcoles 17 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, José Amorín, Milton Antognazza, Danilo Astori, Carlos Baráibar, Jorge T. Bartesaghi, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Alfredo Solari Damonte.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 34 del 24/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Luis José Gallo Imperiale, Luis Alberto Heber, Jorge Larrañaga y  Luis Rosadilla.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110824s0034.pdf" TARGET="_blank"><b>Sesión 34<br>Mi&#233;rcoles 24 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Jorge Gandini, Javier García, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Daniel Peña Fernández, Gustavo Penadés, Aníbal Rondeau, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Juan Antonio Chiruchi y  Enrique Rubio.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Daniel Montiel.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 35 del 31/08/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Eber Da Rosa, Luis José Gallo Imperiale, Jorge Larrañaga, Constanza Moreira, Luis Rosadilla y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110831s0035.pdf" TARGET="_blank"><b>Sesión 35<br>Mi&#233;rcoles 31 de agosto de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Martha Montaner, Walter Domingo Morodo Díaz, Daniel Peña Fernández, Gustavo Penadés, Aníbal Rondeau, Enrique Rubio, Jorge Saravia, Héctor Tajam, Lucía Topolansky y  Isaac Umansky.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Luis Alberto Heber y  Carlos Moreira.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Eduardo Malaquina Ugolini.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 36 del 06/09/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Luis Rosadilla, Alfredo Solari Damonte, Tabaré Viera Duarte y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110906s0036.pdf" TARGET="_blank"><b>Sesión 36<br>Martes 6 de setiembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Jorge Gandini, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Ope Pasquet Iribarne, Gustavo Penadés, Aníbal Rondeau, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 37 del 14/09/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Jorge Larrañaga, Constanza Moreira, Rodolfo Nin Novoa y  Luis Rosadilla.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20110914s0037.pdf" TARGET="_blank"><b>Sesión 37<br>Mi&#233;rcoles 14 de setiembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Ope Pasquet Iribarne, Gustavo Penadés, Aníbal Pereyra, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 38 del 04/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Rodolfo Nin Novoa, Luis Rosadilla y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111004s0038.pdf" TARGET="_blank"><b>Sesión 38<br>Martes 4 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira <b>(1)</b>, Ope Pasquet Iribarne, Gustavo Penadés, Anibal Pereyra <b>(2)</b>, Alicia Pintos, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 39 del 05/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eduardo Lorier, Rodolfo Nin Novoa y  Luis Rosadilla.<br><br><b>(1)</b> Hace uso de la licencia entre las 11:24 y las 12:04<br><b>(2)</b> Actúa entre las 11:24 y las 12:04 <br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111005s0039.pdf" TARGET="_blank"><b>Sesión 39<br>Mi&#233;rcoles 5 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Jorge Gandini, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Eduardo Lorier <b>(1)</b>, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos <b>(2)</b>, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 40 del 11/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Jorge Larrañaga, Rodolfo Nin Novoa y  Luis Rosadilla.<br><br><b>(1)</b> ingresa a partir de las 14:10  p.m.<br><b>(2)</b> ocupa la banca hasta las 14:10  p. m.<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111011s0040.pdf" TARGET="_blank"><b>Sesión 40<br>Martes 11 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori <b>(1)</b>, Carlos Baráibar, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Anibal Pereyra <b>(2)</b>, Hyara Rodríguez, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky <b>(3)</b> y  Tabaré Viera Duarte.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 41 del 12/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Heber, Luis Rosadilla y  Mónica Xavier.<br><br><b>(1)</b> En ejercicio de la Presidencia de la Republica a partir de 13:02 <br><b>(2)</b> Ingresa por la senadora Topolansky a partir de la 13:02 <br><b>(3)</b> Ejerce la Presidencia del Senado a partir de 13:02<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111012s0041.pdf" TARGET="_blank"><b>Sesión 41<br>Mi&#233;rcoles 12 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Carlos Baráibar, Juan José Bentancor, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Hebert Clavijo, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Jorge Gandini, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Anibal Pereyra, Hyara Rodríguez, Jorge Saravia, Alfredo Solari Damonte, Lucía Topolansky y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Heber, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Luis Rosadilla, Enrique Rubio, Héctor Tajam y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 42 del 18/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Danilo Astori.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111018s0042.pdf" TARGET="_blank"><b>Sesión 42<br>Martes 18 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Carlos Baráibar, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Jorge Gandini, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira <b>(1)</b>, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Aníbal Pereyra, Hyara Rodríguez, Aníbal Rondeau <b>(2)</b>, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Lucía Topolansky y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Heber, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Luis Rosadilla, Héctor Tajam y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 43 del 19/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Danilo Astori <b>(3)</b>.<br><br><b>(1)</b> Con licencia a partir de las 14 hs.<br><b>(2)</b> Ingresa a partir de las 14 hs.<br><b>(3)</b> En ejercico de la Presidencia de la República<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111019s0043.pdf" TARGET="_blank"><b>Sesión 43<br>Mi&#233;rcoles 19 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Milton Antognazza <b>(1)</b>, Carlos Baráibar <b>(2)</b>, Carmen Beramendi, Juan Pedro Bordaberry Herrán, José Carlos Cardoso, Alberto Couriel, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Jorge Gandini, Eduardo Lorier, Rafael Michelini, Daniel Montiel, Carlos Moreira, Walter Domingo Morodo Díaz, Ope Pasquet Iribarne, Gustavo Penadés, Aníbal Pereyra, Ana Lía Piñeyrúa Olmos, Hyara Rodríguez, Aníbal Rondeau, Jorge Saravia, Alfredo Solari Damonte y  Lucía Topolansky.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Juan Antonio Chiruchi, Eber Da Rosa y  Tabaré Viera Duarte.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Constanza Moreira, Rodolfo Nin Novoa, Luis Rosadilla, Enrique Rubio, Héctor Tajam y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 44 del 24/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Danilo Astori.<br><br><b>(1)</b> Ingresa al Senado a partir de la hora 11.11<br><b>(2)</b> Con licencia a partir de la hora 11.11<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111024s0044.pdf" TARGET="_blank"><b>Sesión 44<br>Lunes 24 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Milton Antognazza, Julio Battistoni, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Daniel Montiel, Constanza Moreira, Rodolfo Nin Novoa, Ruben Obispo, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Lucía Topolansky y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Danilo Astori, Eber Da Rosa, Luis José Gallo Imperiale, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Carlos Moreira y  Wilson Sanabria.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 45 del 25/10/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Alberto Couriel, Susana Dalmás, Luis Rosadilla, Héctor Tajam y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111025s0045.pdf" TARGET="_blank"><b>Sesión 45<br>Martes 25 de octubre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Julio Battistoni, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Eber Da Rosa, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Gustavo Guarino <b>(1)</b>, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa <b>(2)</b>, Ruben Obispo, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Wilson Sanabria, Jorge Saravia, Alfredo Solari Damonte, Lucía Topolansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 46 del 01/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Couriel, Susana Dalmás, Luis Rosadilla, Héctor Tajam y  Tabaré Viera Duarte.<br><br><b>(1)</b> Ingresa a la hora 10:30<br><b>(2)</b> Licencia a partir de la hora 10:30<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111101s0046.pdf" TARGET="_blank"><b>Sesión 46<br>Martes 1 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Javier García, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Enrique Rubio, Wilson Sanabria, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Isaac Umansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 47 del 08/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Eduardo Lorier, Luis Rosadilla, Alfredo Solari Damonte y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111108s0047.pdf" TARGET="_blank"><b>Sesión 47<br>Martes 8 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Daniel Peña Fernández, Gustavo Penadés, Ana Lía Piñeyrúa Olmos, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 48 del 09/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Luis Alberto Lacalle  Herrera y  Luis Rosadilla.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20111109s0048.pdf" TARGET="_blank"><b>Sesión 48<br>Mi&#233;rcoles 9 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Javier García, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz <b>(1)</b>, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Daniel Peña Fernández, Gustavo Penadés, Ana Lía Piñeyrúa Olmos, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier <b>(2)</b>.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 49 del 15/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Carlos Baráibar, Eber Da Rosa, Luis Alberto Lacalle  Herrera, Rafael Michelini y  Luis Rosadilla.<br><br><b>(1)</b> Se retira de sala a la hora 13:24<br><b>(2)</b> ingresa a sala a la hora 13:24<br></div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 49<br>Martes 15 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Anibal Pereyra, Ana Lía Piñeyrúa Olmos, Aníbal Rondeau, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky <b>(1)</b>, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Lacalle  Herrera, Constanza Moreira y  Luis Rosadilla.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 50 del 16/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Danilo Astori <b>(2)</b>.<br><br><b>(1)</b> Presidente en ejercicio<br><b>(2)</b> En ejercicio de la Presidencia de la República <br></div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 50<br>Mi&#233;rcoles 16 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Aníbal Pereyra, Ana Lía Piñeyrúa Olmos, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky <b>(1)</b>, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Juan Antonio Chiruchi.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Luis Alberto Lacalle  Herrera y  Luis Rosadilla.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 51 del 22/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Danilo Astori.<br><br><b>(1)</b> Presidente en ejercicio<br></div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 51<br>Martes 22 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Aníbal Rondeau, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 52 del 29/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Daniel Carlos Martínez Villaamil, Constanza Moreira y  Luis Rosadilla.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 52<br>Martes 29 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Daniel Peña, Aníbal Rondeau, Enrique Rubio, Wilson Sanabria, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 53 del 30/11/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Carlos Baráibar, Luis José Gallo Imperiale, Constanza Moreira, Gustavo Penadés, Luis Rosadilla y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 53<br>Mi&#233;rcoles 30 de noviembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: José Amorín, Milton Antognazza, Danilo Astori, Carmen Beramendi, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Rubén Martínez Huelmo, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Anibal Pereyra, Hyara Rodríguez, Aníbal Rondeau, Wilson Sanabria, Jorge Saravia, Alfredo Solari Damonte y  Héctor Tajam.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Sergio Abreu.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 54 del 06/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Carlos Baráibar, Luis José Gallo Imperiale, Constanza Moreira, Gustavo Penadés, Luis Rosadilla, Enrique Rubio, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 54<br>Martes 6 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Juan José Bentancor, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Hebert Clavijo, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Eduardo Malaquina Ugolini, Daniel Carlos Martínez Villaamil, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 55 del 07/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Alberto Couriel, Luis Rosadilla, Enrique Rubio y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 55<br>Mi&#233;rcoles 7 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza, Danilo Astori, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Hebert Clavijo, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Eduardo Malaquina Ugolini, Rafael Michelini, Daniel Montiel, Carlos Moreira, Constanza Moreira, Walter Domingo Morodo Díaz, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 56 del 12/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Alberto Couriel, Daniel Carlos Martínez Villaamil, Luis Rosadilla y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 56<br>Lunes 12 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Susana Dalmás, Antonio Gallicchio Queirolo, Luis José Gallo Imperiale, Carlos Gamou, Luis Alberto Heber, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Jorge Saravia, Héctor Tajam, Lucía Topolansky y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Eber Da Rosa, Francisco Gallinal, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Eduardo Malaquina Ugolini, Daniel Montiel, Gustavo Penadés, Enrique Rubio y  Alfredo Solari Damonte.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 57 del 13/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Couriel, Rafael Michelini, Luis Rosadilla y  Tabaré Viera Duarte.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 57<br>Martes 13 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Hebert Clavijo, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Daniel Carlos Martínez Villaamil, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Alicia Pintos, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 58 del 14/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eduardo Lorier, Rafael Michelini y  Luis Rosadilla.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 58<br>Mi&#233;rcoles 14 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Hebert Clavijo, Alberto Couriel, Eber Da Rosa, Antonio Gallicchio Queirolo, Francisco Gallinal, Luis José Gallo Imperiale, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Martha Montaner, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Aníbal Pereyra, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Enrique Rubio.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 59 del 16/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Susana Dalmás, Rafael Michelini, Ope Pasquet Iribarne, Luis Rosadilla y  Lucía Topolansky.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 59<br>Viernes 16 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Danilo Astori, Carlos Baráibar, Germán Cardoso, Juan Antonio Chiruchi, Hebert Clavijo, Alberto Couriel, Francisco Gallinal, Luis José Gallo Imperiale, Jorge Gandini, Javier García, Gustavo Guarino, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Eduardo Lorier, Rubén Martínez Huelmo <b>(1)</b>, Daniel Carlos Martínez Villaamil <b>(2)</b>, Rafael Michelini, Daniel Montiel <b>(3)</b>, Carlos Moreira, Constanza Moreira <b>(4)</b>, Rodolfo Nin Novoa, Ope Pasquet Iribarne, Gustavo Penadés, Hyara Rodríguez <b>(5)</b>, Enrique Rubio, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky <b>(6)</b>, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Saravia.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 60 del 21/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Pedro Bordaberry Herrán, Eber Da Rosa, Susana Dalmás, Jorge Larrañaga y  Luis Rosadilla.<br><br><b>(1)</b> Ingresa a partir de las 17hs<br><b>(2)</b> Con licencia a partir de las 18hs<br><b>(3)</b> Ingresa a partir de las 16hs<br><b>(4)</b> Con licencia a partir de las 16hs<br><b>(5)</b> Ingresa a partir de las 18hs<br><b>(6)</b> Con licencia a partir de las 17hs<br></div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 60<br>Mi&#233;rcoles 21 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Ernesto Agazzi, José Amorín, Danilo Astori, Juan Pedro Bordaberry Herrán, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ruben Obispo, Ope Pasquet Iribarne, Gustavo Penadés, Enrique Rubio, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu y  Juan Antonio Chiruchi.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Carlos Baráibar, Alberto Couriel, Eber Da Rosa, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Daniel Carlos Martínez Villaamil, Luis Rosadilla, Jorge Saravia y  Alfredo Solari Damonte.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 61 del 27/12/2011';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Susana Dalmás.</div></td></tr></table><br><center><a href="javascript:void(alert('Texto del diario de sesiones no disponible'))"><b>Sesión 61<br>Martes 27 de diciembre de 2011</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Ernesto Agazzi, José Amorín, Milton Antognazza <b>(1)</b>, Danilo Astori, Carlos Baráibar <b>(2)</b>, Juan Pedro Bordaberry Herrán, Juan Antonio Chiruchi, Alberto Couriel, Eber Da Rosa, Susana Dalmás <b>(3)</b>, Francisco Gallinal, Luis José Gallo Imperiale, Luis Alberto Heber, Luis Alberto Lacalle  Herrera, Jorge Larrañaga, Eduardo Lorier, Daniel Carlos Martínez Villaamil, Rafael Michelini, Carlos Moreira, Constanza Moreira, Rodolfo Nin Novoa, Ruben Obispo <b>(4)</b>, Ope Pasquet Iribarne, Gustavo Penadés, Luis Rosadilla, Enrique Rubio, Jorge Saravia, Alfredo Solari Damonte, Héctor Tajam, Lucía Topolansky, Tabaré Viera Duarte y  Mónica Xavier.<br><br><b>(1)</b> Ingresa a partir de la hora 16:05<br><b>(2)</b> Con licencia a partir de la hora 16:05<br><b>(3)</b> Con licencia a partir de las 12 hs. <br><b>(4)</b> Ingresa a partir de las 12 hs.<br></div></td></tr></table><script language="JavaScript">
+	document.getElementById('prepage').style.display='none';
+</script></CENTER></DIV><BR><DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH=100% > 
+<TR>
+<TD VALIGN=TOP WIDHT=384>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT HEIGHT=1 BGCOLOR="#FFFFFF">
+<IMG SRC="../../../images/linea_n.gif" WIDHT=230 HEIGHT=10><BR>
+<font face="Arial Narrow" color="#408080" size=1>Montevideo, Uruguay. </font>
+<font face="Arial Narrow" size=1 color="#000000">Poder Legislativo.</font><br>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+</BODY>
+</HTML>

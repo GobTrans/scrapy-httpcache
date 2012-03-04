@@ -1,0 +1,7 @@
+Accept-Language: en
+Accept-Encoding: x-gzip,gzip,deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+User-Agent: GobiernoTransparenteBot/1.0
+Referer: http://www0.parlamento.gub.uy/palacio3/abms2/asistsala/ConsAsistenciaBrief.asp?Cuerpo=D&Legislatura=46
+Cookie: ASPSESSIONIDCCSCSDBQ=IPEPLNNBBHGFEMAPNKDFMNNO
+Content-Type: application/x-www-form-urlencoded

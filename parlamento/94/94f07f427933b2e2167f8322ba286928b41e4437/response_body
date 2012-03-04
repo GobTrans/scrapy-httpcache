@@ -1,0 +1,273 @@
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,1396671,4,0,0,0,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('http://s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1396671&101" alt="contador web" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+<script language="JavaScript">
+    <!--
+    window.moveTo(0,0);
+    self.focus();
+    -->
+</script>
+<SCRIPT LANGUAGE="JavaScript" SRC="../../../expandcollapse.js"></SCRIPT>
+
+<script type="text/javascript">
+var i, j, digiclock
+digiclock = "00:00:00";
+j = 0;
+function prog()
+{
+  document.getElementById("d1").innerHTML="";	
+  document.getElementById("d2").style.width=0;  
+  i=0;
+  progBar(); 
+}
+
+function progBar()
+{
+	if (i<=(500)) {
+		if (i>50) {
+			document.getElementById("d1").innerHTML=parseInt(i/5)+"%";
+		}
+		document.getElementById("d2").style.width=i+"px";
+		var j=0;		
+		while (j<=100)
+			j++;  
+		setTimeout("progBar();", 1000); 
+		i++;   
+	}
+	else {
+		if (document.getElementById('prepage').style.display != 'none') {
+			document.getElementById('prepage').style.display='none';
+			alert('Se excedió el tiempo máximo permitido para la consulta. Reitente en instantes por favor.');
+		}
+	}
+}
+
+function timer()
+{
+    var digiformat = "";
+	if(j>3599)
+	{
+		var H = Math.floor(j/3600);
+	}
+	else
+	{
+		var H = 0;
+	}
+	
+	var M = j - (H*3600)
+	
+	if(M>59)
+	{
+		M = Math.floor(M/60)
+	}
+	else
+	{
+		M = 0
+	}	
+	var S = j - (M*60)	
+	if(H<10)
+	{
+		H = "0"+H;
+	}
+	if(M<10)
+	{
+		M = "0"+M;
+	}
+	if(S<10)
+	{
+		S = "0"+S;
+	}
+	document.getElementById('time').innerHTML = H+":"+M+":"+S;
+    setTimeout('timer()', 1000);
+    j++;
+}
+</script>
+<!--div align=center id="prepage" style="filter:alpha(opacity=90);top:155px;position:absolute;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;"-->
+<div align=center id="prepage" style="position:absolute;top:142px;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;">
+<center>
+    <img src="/dgip/images/pixel.gif" border="0" height="20"><br />
+    <table border="1" style="border-style:groove;border-width:thin;width:420px;border-color:Scrollbar;" ID="Table1" cellspacing="0">
+      <tr>
+	    <td align="center">
+	      <p><font face="Arial" size=2><strong>Sistema de Información Parlamentaria (SipXXI)</strong></font><br /><br />
+	      <img src="/dgip/images/cargandochico.gif" border="0" align=absmiddle /><font face="Arial" size=1><strong>&nbsp;Aguarde, la página por Ud consultada, está siendo procesada ....<br></font><font face="Arial" size=1><span id="time">90</span></font></p>
+	      <!--p><font face="Arial" size=1>Si tiene algún tipo de inconveniente al cargar esta página, le rogamos nos lo haga saber enviando un correo a <a href="mailto:webmaster@parlamento.gub.uy">webmaster@parlamento.gub.uy</a>. Muchas gracias.</font></p-->
+	    </td>
+      </tr>
+    </table>
+    <!--table border="1" cellpadding="1" cellspacing="0" width="50%" ID="Table2">  
+      <tr><td align=left>
+	    <div id="d2" style="position:relative;top:0px;left:0px;background-color:#408080;height:12px;width:0px;padding-top:5px;padding:0px;border-width:thin;">
+	    <div id="d1" style="position:relative;top:0px;left:0px;color:#f0ffff;height:12px;text-align:center;font:bold;padding:0px;padding-top:3px;border-width:thin;">
+	    </td>
+      </tr>
+    </table><br-->
+    <table border="0" cellpadding="1" cellspacing="0" width="65%">
+	    <tr><td align=left>
+		    <div id="MensajeProceso" style="display:none;position:relative;top:0px;left:0px;font-family:Arial;font-size:11px;color:#006699;height:11px;text-align:center;font-weight:bold;padding:0px;padding-top:3px;">&nbsp;</div>
+	    </td></tr>
+    </table><br>
+    <!--img src="/dgip/images/linea2.gif" border="0"><br /-->
+</center>
+</div>
+<!--script type="text/javascript">
+	prog();
+</script-->
+<script type="text/javascript">
+	timer();
+</script>
+<DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDERCOLORDARK="#000000" BORDERCOLORLIGHT="#000000" BORDERCOLOR="#FFFFFF">
+<TR>
+<TD VALIGN=TOP WIDTH="95%" ALIGN=CENTER BGCOLOR="#000000">
+<A HREF="javascript:window.close()">
+<IMG SRC="../../../images/cabcmr.gif" ALT="Cerrar ventana" ALIGN=LEFT BORDER=0></A>
+</TD>
+
+<TD WIDTH="5%" ALIGN=CENTER VALIGN=CENTER BGCOLOR="#000000">
+<DIV ALIGN=CENTER><A HREF="javascript:void(printwindow())"><IMG SRC="../../../palacio3/img/b_print_2.gif" BORDER=0 TITLE="Imprimir página actual"></A></DIV>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP COLSPAN=2 WIDTH="100%" ALIGN=CENTER>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Inicializando ...';
+</script>
+<HTML>
+<HEAD>
+<META name="robots" content="noindex">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<META http-equiv="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT">
+<STYLE TYPE="text/css">
+<!--
+BODY {font:9pt Arial; color:black; font-weight:normal;}
+TBODY {font:9pt Arial; color:black; font-weight:normal;}
+A:link {font:9pt Arial;  color:#006699; font-weight:normal; text-decoration:none;}
+A:visited {font:9pt Arial; color:#006699; font-weight:normal; text-decoration:none;}
+H1 {font:14pt Arial; color:black; font-weight:bold;}
+H2 {font:12pt Arial; color:black; font-weight:bold;}
+H3 {font:9pt Arial; color:black; font-weight:bold;}
+H4 {font:7pt Arial; color:black; font-weight:bold;}
+.boton{background:#006699;color:#FFFFFF;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.box{background:#FFFFFF;color:#000000;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.select{background:#9FBCAB;color:#006699;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+-->
+</STYLE>
+<TITLE>
+Sistema de Informaci&#243;n Parlamentaria
+</TITLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="validate-date.js"></SCRIPT>
+<script language="JavaScript" src="../rightbutton.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#006699" VLINK="#006699" TEXT="#000000">
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Contabilizando Sesiones ...';
+</script>
+<CENTER>
+<STRONG><FONT SIZE=3>ASISTENCIA A SESIONES</FONT></STRONG>
+</CENTER><BR>
+<CENTER>
+<STRONG><FONT SIZE=1>Período considerado: 12/12/2001 - 31/12/2001<br>6 sesiones. (Incluye titulares y suplentes)</FONT></STRONG>
+</CENTER><BR>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Consultando Sesiones ...';
+</script>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 79 del 12/12/2001';
+</script>
+<br><center><a href="/htmlstat/sesiones/pdfs/camara/20011212d0079.pdf" TARGET="_blank"><b>Sesión 79<br>Mi&#233;rcoles 12 de diciembre de 2001</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Washington Abdala, Margot Acosta Rivera, Guzmán Acosta y Lara, Guillermo Alvarez, Gustavo Amen Vaghetti, Mario Waldemar Amestoy Doufour, José Amorín, Raúl Argenzio, Beatriz Argimón, Roberto Arrarte Fernández, Roque Arregui, Angeles Balparda, Carlos Baráibar, Gabriel Barandiarán, Raquel Barreiro, Jorge Barrera, Artigas A. Barrios, Juan José Bentancor, Nahum Bergstein, Ricardo Berois Quinteros, Daniel Bianchi, José Luis Blasina, Gustavo Borsari Brenna, Nelson Bosch, Brum Canet, Julio Cardozo Ferreira, Nora Castro, Ricardo Castromán Rodríguez, Jorge Chápper, Guillermo Chifflet, Roberto Conde, Sebastián Da Silva, Juan Carlos De León González, Mariella Demarco, Ruben H. Díaz, Heber Duque, Ricardo Falero, Alejo Fernández Cháves, Ramón Fonticiella, Luis José Gallo Imperiale, Daniel García Pintos, Orlando Gil Solares, Carlos González Alvarez, Gustavo Guarino, Raymundo Guynot de Boismenú, Arturo Heber Füllgraff, Doreen Javier Ibarra, Luis Alberto Lacalle Pou, Susana Lago Rial, Néstor Mario Landarte Hauret, Julio C. Lara Gilene, Félix Laviña, Ramón Legnani, Henry López, Guido Machado, Oscar Magurno Souto, José Carlos Mahía, Juan Máspoli Bianchi, Artigas Melgarejo, José Homero Mello, Felipe Michelini, José María Mieres Visillac, Ruben Obispo, Jorge Orrico, Francisco Ortiz, Edgardo Ortuño, Gabriel Pais, Ronald Pais, Jorge Pandolfo, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Darío Pérez Brito, Enrique Pérez Morad, Pedro César Pérez Stewart, Enrique Pintado, Carlos Pita, Martín Ponce de León, Yeanneth Puñales Brun, Domingo Ramos, Glenda Rondán, Hugo Héctor Rosete Brignole, Víctor Rossi, Adolfo Pedro Sande, Diana Saravia Olmos, Alberto Scavarelli, Leonel Heber Sellanes, Raúl Sendic, Pedro Señorale, Juan C. Siazaro Andreotti, Julio C. Silveira, Héctor Gustavo Silveira Rodríguez, Lucía Topolansky, Daisy Tourné, Wilmer Trivel, Julio César Varona García, José Luis Veiga Nicolau y  Walter Vener Carboni.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: María Alejandra Rivero Saralegui.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 80 del 13/12/2001';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Juan Justo Amaro Cedrés, José Bayardi, Edgar Bellomo, Ruben Carminatti, Silvana Charlone, Eduardo Chiesa Bordahandy, Daniel Díaz Maynard, Juan José Domínguez, Alejandro Falco, Tabaré Hackenbruch Legnani, Pablo Mieres, Ricardo Molinelli, Martha Montaner, Iván Posada, Ambrosio Rodríguez y  Julio Luis Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/camara/20011213d0080.pdf" TARGET="_blank"><b>Sesión 80<br>Jueves 13 de diciembre de 2001</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Washington Abdala, Margot Acosta Rivera, Guzmán Acosta y Lara, Guillermo Alvarez, Gustavo Amen Vaghetti, Mario Waldemar Amestoy Doufour, Raúl Argenzio, Beatriz Argimón, Roberto Arrarte Fernández, Angeles Balparda, Gabriel Barandiarán, Jorge Barrera, Artigas A. Barrios, Juan José Bentancor, Nahum Bergstein, Ricardo Berois Quinteros, Daniel Bianchi, José Luis Blasina, Gustavo Borsari Brenna, Nelson Bosch, Brum Canet, Nora Castro, Ricardo Castromán Rodríguez, Jorge Chápper, Eduardo Chiesa Bordahandy, Guillermo Chifflet, Roberto Conde, Sebastián Da Silva, Ruben H. Díaz, Daniel Díaz Maynard, Juan José Domínguez, Heber Duque, Luis Omar Elisburu Gómez, Ricardo Falero, Alejo Fernández Cháves, Luis José Gallo Imperiale, Augusto García Gutiérrez, Daniel García Pintos, Gabriela Garrido, Orlando Gil Solares, Carlos González Alvarez, Gustavo Guarino, Raymundo Guynot de Boismenú, Arturo Heber Füllgraff, Doreen Javier Ibarra, Luis Alberto Lacalle Pou, Julio C. Lara Gilene, Félix Laviña, Ramón Legnani, Oscar Magurno Souto, Diego Martínez García, Artigas Melgarejo, José Homero Mello, Felipe Michelini, Pablo Mieres, José María Mieres Visillac, Ruben Obispo, Jorge Orrico, Edgardo Ortuño, Gabriel Pais, Ronald Pais, Jorge Pandolfo, Daniela Payssé, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Enrique Pintado <b>(1)</b>, Carlos Pita, Martín Ponce de León, Elena Ponte, Yeanneth Puñales Brun, Domingo Ramos, Glenda Rondán, Hugo Héctor Rosete Brignole, Víctor Rossi, Diana Saravia Olmos, Alberto Scavarelli, Raúl Sendic, Julio C. Silveira, Lucía Topolansky, Daisy Tourné, Wilmer Trivel, José Luis Urreta Heguaburo, Julio César Varona García y  Walter Vener Carboni.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Julio Cardozo Ferreira, Juan Carlos De León González, Henry López, Juan Máspoli Bianchi, Francisco Ortiz, Darío Pérez Brito, Enrique Pérez Morad, Pedro César Pérez Stewart, María Alejandra Rivero Saralegui, Adolfo Pedro Sande, Juan C. Siazaro Andreotti, Héctor Gustavo Silveira Rodríguez y  María Terrón de Estéves.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 1 del 17/12/2001';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Juan Justo Amaro Cedrés, José Amorín, Roque Arregui, Carlos Baráibar, Raquel Barreiro, José Bayardi, Edgar Bellomo, Ruben Carminatti, Silvana Charlone, Alejandro Falco, Ramón Fonticiella, Tabaré Hackenbruch Legnani, Guido Machado, José Carlos Mahía, Ricardo Molinelli, Martha Montaner, Iván Posada, Ambrosio Rodríguez, Julio Luis Sanguinetti, Leonel Heber Sellanes y  Pedro Señorale.<br><br><b>(1)</b> a la hora 16:45 comenzó licencia, ingresando en su lugar la Sra. Eloísa Moreira.<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/camara/20011217d0001.pdf" TARGET="_blank"><b>Sesión 1<br>Lunes 17 de diciembre de 2001</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Washington Abdala, Margot Acosta Rivera, Guzmán Acosta y Lara, Guillermo Alvarez, Juan Justo Amaro Cedrés, José Amorín, Raúl Argenzio, Beatriz Argimón, Roberto Arrarte Fernández, Angeles Balparda, Carlos Baráibar, Gabriel Barandiarán, Raquel Barreiro, Jorge Barrera, José Bayardi, Edgar Bellomo, Juan José Bentancor, Nahum Bergstein, Ricardo Berois Quinteros, José Luis Blasina, Eduardo Bonomi, Gustavo Borsari Brenna, Nelson Bosch, Rosario Bueno, José María Caballero Cardozo, Julio Cardozo Ferreira, Ricardo Castromán Rodríguez, Jorge Chápper, Eduardo Chiesa Bordahandy, Guillermo Chifflet, Roberto Conde, Hugo Elbio Cuadrado Fernández, Sebastián Da Silva, Miguel Dicancro, Juan José Domínguez, Heber Duque, Oscar Echevarría, Alejandro Falco, Ricardo Falero, Alejo Fernández Cháves, Asdrúbal N. Fernández De León, Ramón Fonticiella, Luis José Gallo Imperiale, Gabriela Garrido, Orlando Gil Solares, Carlos González Alvarez, Raymundo Guynot de Boismenú, Arturo Heber Füllgraff, Doreen Javier Ibarra, Luis Alberto Lacalle Pou, Julio C. Lara Gilene, Félix Laviña, Ramón Legnani, Henry López, Guido Machado, Oscar Magurno Souto, José Homero Mello, Felipe Michelini, Pablo Mieres, José María Mieres Visillac, Martha Montaner, Luis Basilio Morales, Ruben Obispo, Andrés Oribe, Jorge Orrico, Francisco Ortiz, Gabriel Pais, Ronald Pais, Jorge Pandolfo, Jorge Patrone, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Darío Pérez Brito, Enrique Pérez Morad, Enrique Pintado, Carlos Pita, Martín Ponce de León, Yeanneth Puñales Brun, Glenda Rondán, Hugo Héctor Rosete Brignole, Víctor Rossi, Adolfo Pedro Sande, Diana Saravia Olmos, Alberto Scavarelli, Leonel Heber Sellanes, Pedro Señorale, Julio C. Silveira, Lucía Topolansky, Wilmer Trivel, José Fernando Vázquez Bentancur, José Luis Veiga Nicolau y  Walter Vener Carboni.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Daniel Bianchi, Artigas Melgarejo, María Alejandra Rivero Saralegui, Ambrosio Rodríguez, Juan C. Siazaro Andreotti y  Daisy Tourné.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 2 del 18/12/2001';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Gustavo Amen Vaghetti, Roque Arregui, Artigas A. Barrios, Brum Canet, Ruben Carminatti, Nora Castro, Silvana Charlone, Ruben H. Díaz, Daniel Díaz Maynard, Daniel García Pintos, Gustavo Guarino, Tabaré Hackenbruch Legnani, José Carlos Mahía, Juan Máspoli Bianchi, Ricardo Molinelli, Iván Posada, Julio Luis Sanguinetti, Raúl Sendic y  Héctor Gustavo Silveira Rodríguez.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/camara/20011218d0002.pdf" TARGET="_blank"><b>Sesión 2<br>Martes 18 de diciembre de 2001</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Washington Abdala, Margot Acosta Rivera, Guzmán Acosta y Lara, Guillermo Alvarez, Juan Justo Amaro Cedrés, Gustavo Amen Vaghetti, José Amorín, Raúl Argenzio, Beatriz Argimón, Roberto Arrarte Fernández, Roque Arregui, Angeles Balparda, Carlos Baráibar, Jorge Barrera, José Bayardi, Edgar Bellomo, Juan José Bentancor, Nahum Bergstein, Ricardo Berois Quinteros, Daniel Bianchi, José Luis Blasina, Eduardo Bonomi, Gustavo Borsari Brenna, Nelson Bosch, José María Caballero Cardozo, Brum Canet, Julio Cardozo Ferreira, Ruben Carminatti, Ricardo Castromán Rodríguez, Jorge Chápper, Eduardo Chiesa Bordahandy, Guillermo Chifflet, Roberto Conde, Sebastián Da Silva, Miguel Dicancro, Juan José Domínguez, Heber Duque, Oscar Echevarría, Angel Fachinetti Robles, Alejandro Falco, Ricardo Falero, Alejo Fernández Cháves, Asdrúbal N. Fernández De León, Ramón Fonticiella, Luis José Gallo Imperiale, Daniel García Pintos, Orlando Gil Solares, Carlos González Alvarez, Arturo Heber Füllgraff, Doreen Javier Ibarra, Luis Alberto Lacalle Pou, Julio C. Lara Gilene, Félix Laviña, Ramón Legnani, Henry López, Guido Machado, José Carlos Mahía, Ney Humberto Marín González, Artigas Melgarejo, José Homero Mello, Felipe Michelini, Pablo Mieres, José María Mieres Visillac, Ricardo Molinelli, Martha Montaner, Luis Basilio Morales, Ruben Obispo, Jorge Orrico, Francisco Ortiz, Gabriel Pais, Ronald Pais, Jorge Pandolfo, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Enrique Pérez Morad, Enrique Pintado, Carlos Pita, Martín Ponce de León, Elena Ponte, Ambrosio Rodríguez, Glenda Rondán, Hugo Héctor Rosete Brignole, Víctor Rossi, Adolfo Pedro Sande, Diana Saravia Olmos, Leonel Heber Sellanes, Raúl Sendic, Pedro Señorale, Carlos Testoni Núñez, Lucía Topolansky, Daisy Tourné, Wilmer Trivel, José Luis Veiga Nicolau y  Walter Vener Carboni.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Gabriel Barandiarán, Darío Pérez Brito, Yeanneth Puñales Brun y  María Alejandra Rivero Saralegui.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 3 del 19/12/2001';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Raquel Barreiro, Artigas A. Barrios, Nora Castro, Silvana Charlone, Ruben H. Díaz, Daniel Díaz Maynard, Gustavo Guarino, Tabaré Hackenbruch Legnani, Oscar Magurno Souto, Juan Máspoli Bianchi, Iván Posada, Julio Luis Sanguinetti, Alberto Scavarelli, Julio C. Silveira y  Héctor Gustavo Silveira Rodríguez.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/camara/20011219d0003.pdf" TARGET="_blank"><b>Sesión 3<br>Mi&#233;rcoles 19 de diciembre de 2001</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Washington Abdala, Margot Acosta Rivera, Guzmán Acosta y Lara, Guillermo Alvarez, Juan Justo Amaro Cedrés, Gustavo Amen Vaghetti, José Amorín, Beatriz Argimón, Roberto Arrarte Fernández, Roque Arregui, Angeles Balparda, Jorge Barrera, Artigas A. Barrios, José Bayardi, Edgar Bellomo, Juan José Bentancor, Nahum Bergstein, Ricardo Berois Quinteros, Daniel Bianchi, José Luis Blasina, Eduardo Bonomi, Gustavo Borsari Brenna, Nelson Bosch, José María Caballero Cardozo, Brum Canet, Julio Cardozo Ferreira, Ruben Carminatti, Ricardo Castromán Rodríguez, Jorge Chápper, Silvana Charlone, Eduardo Chiesa Bordahandy, Guillermo Chifflet, Roberto Conde, Sebastián Da Silva, Juan José Domínguez, Oscar Echevarría, Alejandro Falco, Ricardo Falero, Alejo Fernández Cháves, Ramón Fonticiella, Luis José Gallo Imperiale, Daniel García Pintos, Orlando Gil Solares, Carlos González Alvarez, Arturo Heber Füllgraff, Doreen Javier Ibarra, Luis Alberto Lacalle Pou, Félix Laviña, Ramón Legnani, Henry López, Guido Machado, Olegario Machado, Oscar Magurno Souto, José Carlos Mahía, José Homero Mello, Felipe Michelini, Pablo Mieres, José María Mieres Visillac, Ricardo Molinelli, Luis Basilio Morales, Ruben Obispo, Jorge Orrico, Francisco Ortiz, Gabriel Pais, Ronald Pais, Daniela Payssé, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Darío Pérez Brito, Alvaro Pérez Monza, Enrique Pérez Morad, Enrique Pintado, Martín Ponce de León, Elena Ponte, Iván Posada, Yeanneth Puñales Brun, Domingo Ramos, Carlos Roberto Riverós Cortesi, Ambrosio Rodríguez, Glenda Rondán, Hugo Héctor Rosete Brignole, Víctor Rossi, Adolfo Pedro Sande, Diana Saravia Olmos, Alberto Scavarelli, Leonel Heber Sellanes, Raúl Sendic, Pedro Señorale, Lucía Topolansky, Daisy Tourné, Wilmer Trivel, José Luis Veiga Nicolau y  Walter Vener Carboni.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Miguel Dicancro, Heber Duque, Julio C. Lara Gilene, Ney Humberto Marín González y  María Alejandra Rivero Saralegui.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 4 del 27/12/2001';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, Raúl Argenzio, Carlos Baráibar, Raquel Barreiro, Nora Castro, Ruben H. Díaz, Daniel Díaz Maynard, Gustavo Guarino, Tabaré Hackenbruch Legnani, Juan Máspoli Bianchi, Artigas Melgarejo, Martha Montaner, Carlos Pita, Julio Luis Sanguinetti, Julio C. Silveira y  Héctor Gustavo Silveira Rodríguez.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/camara/20011227d0004.pdf" TARGET="_blank"><b>Sesión 4<br>Jueves 27 de diciembre de 2001</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Washington Abdala <b>(1)</b>, Guzmán Acosta y Lara, Luis Gustavo Aguilar, Guillermo Alvarez, Juan Justo Amaro Cedrés, Gustavo Amen Vaghetti, José Amorín, Raúl Argenzio, Beatriz Argimón, Roberto Arrarte Fernández, Roque Arregui, Angeles Balparda, Carlos Baráibar, Raquel Barreiro, Jorge Barrera, Artigas A. Barrios, José Bayardi, Edgar Bellomo, Juan José Bentancor, Nahum Bergstein <b>(2)</b>, Ricardo Berois Quinteros, Daniel Bianchi, Gustavo Borsari Brenna, Nelson Bosch, Amabel Cabrera Díaz, Brum Canet, Julio Cardozo Ferreira, Nora Castro, Ricardo Castromán Rodríguez, Jorge Chápper, Silvana Charlone, Eduardo Chiesa Bordahandy, Guillermo Chifflet, Roberto Conde, Sebastián Da Silva, Miguel Dicancro, Juan José Domínguez, Angel Fachinetti Robles, Alejandro Falco, Ricardo Falero, Alejo Fernández Cháves, Ramón Fonticiella, Luis José Gallo Imperiale, Daniel García Pintos, Carlos González Alvarez, Gustavo Guarino, Raymundo Guynot de Boismenú, Tabaré Hackenbruch Legnani, Arturo Heber Füllgraff, Doreen Javier Ibarra, Luis Alberto Lacalle Pou, Julio C. Lara Gilene <b>(3)</b>, Félix Laviña <b>(4)</b>, Ramón Legnani, Henry López, Guido Machado, Oscar Magurno Souto, José Carlos Mahía, Diego Martínez García, Artigas Melgarejo, José Homero Mello, Felipe Michelini, Pablo Mieres, José María Mieres Visillac, Ricardo Molinelli, Martha Montaner, Ruben Obispo, Francisco Ortiz, Gabriel Pais, Ronald Pais, Daniel Peña Fernández, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Darío Pérez Brito, Enrique Pérez Morad, Enrique Pintado, Carlos Pita, Martín Ponce de León, Iván Posada, Yeanneth Puñales Brun, Carlos Roberto Riverós Cortesi, Ambrosio Rodríguez, Glenda Rondán, Víctor Rossi, Adolfo Pedro Sande, Julio Luis Sanguinetti, Diana Saravia Olmos, Leonel Heber Sellanes, Raúl Sendic, Pedro Señorale, Julio C. Silveira, Héctor Gustavo Silveira Rodríguez, Carlos Testoni Núñez, Lucía Topolansky, Daisy Tourné, Wilmer Trivel, José Luis Veiga Nicolau, Walter Vener Carboni, Homero Viera y  Jorge Zás Fernández.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: María Alejandra Rivero Saralegui.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Hugo Héctor Rosete Brignole.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Ernesto Agazzi, José Luis Blasina, Ruben Carminatti, Ruben H. Díaz, Daniel Díaz Maynard, Orlando Gil Solares, Juan Máspoli Bianchi, Jorge Orrico y  Alberto Scavarelli.<br><br><b>(1)</b> a la hora 13:00 comenzó licencia, ingresando en su lugar la Sra. Amabel Cabrera.<br><b>(2)</b> a la hora 13:00 comenzó licencia, ingresando en su lugar el Sr. Angel Fachinetti.<br><b>(3)</b> a la hora 19:15 comenzó licencia ingresando en su lugar el Sr. Daniel Peña.<br><b>(4)</b> a la hora 19:15 comenzó licencia ingresando en su lugar el Sr. Diego Martínez.<br></div></td></tr></table><script language="JavaScript">
+	document.getElementById('prepage').style.display='none';
+</script></CENTER></DIV><BR><DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH=100% > 
+<TR>
+<TD VALIGN=TOP WIDHT=384>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT HEIGHT=1 BGCOLOR="#FFFFFF">
+<IMG SRC="../../../images/linea_n.gif" WIDHT=230 HEIGHT=10><BR>
+<font face="Arial Narrow" color="#408080" size=1>Montevideo, Uruguay. </font>
+<font face="Arial Narrow" size=1 color="#000000">Poder Legislativo.</font><br>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+</BODY>
+</HTML>

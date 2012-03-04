@@ -1,0 +1,241 @@
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,1396671,4,0,0,0,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('http://s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1396671&101" alt="contador web" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+<script language="JavaScript">
+    <!--
+    window.moveTo(0,0);
+    self.focus();
+    -->
+</script>
+<SCRIPT LANGUAGE="JavaScript" SRC="../../../expandcollapse.js"></SCRIPT>
+
+<script type="text/javascript">
+var i, j, digiclock
+digiclock = "00:00:00";
+j = 0;
+function prog()
+{
+  document.getElementById("d1").innerHTML="";	
+  document.getElementById("d2").style.width=0;  
+  i=0;
+  progBar(); 
+}
+
+function progBar()
+{
+	if (i<=(500)) {
+		if (i>50) {
+			document.getElementById("d1").innerHTML=parseInt(i/5)+"%";
+		}
+		document.getElementById("d2").style.width=i+"px";
+		var j=0;		
+		while (j<=100)
+			j++;  
+		setTimeout("progBar();", 1000); 
+		i++;   
+	}
+	else {
+		if (document.getElementById('prepage').style.display != 'none') {
+			document.getElementById('prepage').style.display='none';
+			alert('Se excedió el tiempo máximo permitido para la consulta. Reitente en instantes por favor.');
+		}
+	}
+}
+
+function timer()
+{
+    var digiformat = "";
+	if(j>3599)
+	{
+		var H = Math.floor(j/3600);
+	}
+	else
+	{
+		var H = 0;
+	}
+	
+	var M = j - (H*3600)
+	
+	if(M>59)
+	{
+		M = Math.floor(M/60)
+	}
+	else
+	{
+		M = 0
+	}	
+	var S = j - (M*60)	
+	if(H<10)
+	{
+		H = "0"+H;
+	}
+	if(M<10)
+	{
+		M = "0"+M;
+	}
+	if(S<10)
+	{
+		S = "0"+S;
+	}
+	document.getElementById('time').innerHTML = H+":"+M+":"+S;
+    setTimeout('timer()', 1000);
+    j++;
+}
+</script>
+<!--div align=center id="prepage" style="filter:alpha(opacity=90);top:155px;position:absolute;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;"-->
+<div align=center id="prepage" style="position:absolute;top:142px;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;">
+<center>
+    <img src="/dgip/images/pixel.gif" border="0" height="20"><br />
+    <table border="1" style="border-style:groove;border-width:thin;width:420px;border-color:Scrollbar;" ID="Table1" cellspacing="0">
+      <tr>
+	    <td align="center">
+	      <p><font face="Arial" size=2><strong>Sistema de Información Parlamentaria (SipXXI)</strong></font><br /><br />
+	      <img src="/dgip/images/cargandochico.gif" border="0" align=absmiddle /><font face="Arial" size=1><strong>&nbsp;Aguarde, la página por Ud consultada, está siendo procesada ....<br></font><font face="Arial" size=1><span id="time">90</span></font></p>
+	      <!--p><font face="Arial" size=1>Si tiene algún tipo de inconveniente al cargar esta página, le rogamos nos lo haga saber enviando un correo a <a href="mailto:webmaster@parlamento.gub.uy">webmaster@parlamento.gub.uy</a>. Muchas gracias.</font></p-->
+	    </td>
+      </tr>
+    </table>
+    <!--table border="1" cellpadding="1" cellspacing="0" width="50%" ID="Table2">  
+      <tr><td align=left>
+	    <div id="d2" style="position:relative;top:0px;left:0px;background-color:#408080;height:12px;width:0px;padding-top:5px;padding:0px;border-width:thin;">
+	    <div id="d1" style="position:relative;top:0px;left:0px;color:#f0ffff;height:12px;text-align:center;font:bold;padding:0px;padding-top:3px;border-width:thin;">
+	    </td>
+      </tr>
+    </table><br-->
+    <table border="0" cellpadding="1" cellspacing="0" width="65%">
+	    <tr><td align=left>
+		    <div id="MensajeProceso" style="display:none;position:relative;top:0px;left:0px;font-family:Arial;font-size:11px;color:#006699;height:11px;text-align:center;font-weight:bold;padding:0px;padding-top:3px;">&nbsp;</div>
+	    </td></tr>
+    </table><br>
+    <!--img src="/dgip/images/linea2.gif" border="0"><br /-->
+</center>
+</div>
+<!--script type="text/javascript">
+	prog();
+</script-->
+<script type="text/javascript">
+	timer();
+</script>
+<DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDERCOLORDARK="#000000" BORDERCOLORLIGHT="#000000" BORDERCOLOR="#FFFFFF">
+<TR>
+<TD VALIGN=TOP WIDTH="95%" ALIGN=CENTER BGCOLOR="#000000">
+<A HREF="javascript:window.close()">
+<IMG SRC="../../../images/cabcmr.gif" ALT="Cerrar ventana" ALIGN=LEFT BORDER=0></A>
+</TD>
+
+<TD WIDTH="5%" ALIGN=CENTER VALIGN=CENTER BGCOLOR="#000000">
+<DIV ALIGN=CENTER><A HREF="javascript:void(printwindow())"><IMG SRC="../../../palacio3/img/b_print_2.gif" BORDER=0 TITLE="Imprimir página actual"></A></DIV>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP COLSPAN=2 WIDTH="100%" ALIGN=CENTER>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Inicializando ...';
+</script>
+<HTML>
+<HEAD>
+<META name="robots" content="noindex">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<META http-equiv="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT">
+<STYLE TYPE="text/css">
+<!--
+BODY {font:9pt Arial; color:black; font-weight:normal;}
+TBODY {font:9pt Arial; color:black; font-weight:normal;}
+A:link {font:9pt Arial;  color:#006699; font-weight:normal; text-decoration:none;}
+A:visited {font:9pt Arial; color:#006699; font-weight:normal; text-decoration:none;}
+H1 {font:14pt Arial; color:black; font-weight:bold;}
+H2 {font:12pt Arial; color:black; font-weight:bold;}
+H3 {font:9pt Arial; color:black; font-weight:bold;}
+H4 {font:7pt Arial; color:black; font-weight:bold;}
+.boton{background:#006699;color:#FFFFFF;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.box{background:#FFFFFF;color:#000000;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.select{background:#9FBCAB;color:#006699;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+-->
+</STYLE>
+<TITLE>
+Sistema de Informaci&#243;n Parlamentaria
+</TITLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="validate-date.js"></SCRIPT>
+<script language="JavaScript" src="../rightbutton.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#006699" VLINK="#006699" TEXT="#000000">
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Contabilizando Sesiones ...';
+</script>
+<CENTER>
+<STRONG><FONT SIZE=3>ASISTENCIA A SESIONES</FONT></STRONG>
+</CENTER><BR>
+<CENTER>
+<STRONG><FONT SIZE=1>Período considerado: 01/01/2010 - 03/02/2010<br>2 sesiones. (Incluye titulares y suplentes)</FONT></STRONG>
+</CENTER><BR>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Consultando Sesiones ...';
+</script>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 11 del 19/01/2010';
+</script>
+<br><center><a href="/htmlstat/sesiones/pdfs/camara/20100119d0011.pdf" TARGET="_blank"><b>Sesión 11<br>Martes 19 de enero de 2010</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Pablo Abdala, Luis Alberto Aguilar Cháves, Pablo Alvarez López, José Amorín, Beatriz Argimón, Roque Arregui, Alfredo Asti, Julio Lino Balmelli Camoirano, Carlos Baráibar, Luis Batalla Doufrechou, Julio Battistoni, José Bayardi <b>(1)</b>, Bertil Bentos, Gustavo Bernini, Daniel Bianchi, Eleonora Bianchi, Gustavo Borsari Brenna, Sergio Botana, Juan José Bruno, Germán Cardoso, José Carlos Cardoso, Julio Cardozo Ferreira, Alberto Casas, Raúl Casás, Richard Charamelo, Hebert Clavijo, Alba M. Cocco Soto <b>(2)</b>, Roberto Conde, Carlos Corujo, Alvaro Delgado, Juan José Domínguez, Heber Duque, Gastón Elola, Gustavo A. Espinosa, Sandra Etcheverry, Julio César Fernández, David Fernández Gordillo, Julio Fiordelmondo Dos Santos, Luis José Gallo Imperiale <b>(3)</b>, Carlos Gamou, Jorge Gandini, Javier García, Nora Gauthier, Rodrigo Goñi Romero, Carlos González Alvarez, Oscar Groba Arriondo, Gustavo Guarino, Uberfil Hernández, Doreen Javier Ibarra, Pablo Iturralde Viñas, Liliam Kechichián, Luis Alberto Lacalle Pou, Alvaro F. Lorenzo, Guido Machado, José Carlos Mahía, Daniel Mañana, Eduardo Márquez, Rubén Martínez Huelmo, Carlos Maseda, Artigas Melgarejo, Jorge Menéndez, Felipe Michelini, Gonzalo Mujica, Pablo Naya, Gonzalo Novales, Jorge Orrico, Edgardo Ortuño, Ivonne Passada <b>(4)</b>, Daniela Payssé, Aníbal Pereyra, Esteban Pérez, Darío Pérez Brito <b>(5)</b>, Nelson Eduardo Pérez Cortelezzi, Pablo Pérez González, Enrique Pintado <b>(6)</b>, Iván Posada, Jorge Pozzi, Edgardo Rodríguez, Luis Rosadilla <b>(7)</b>, Javier Salsamendi, Alberto Scavarelli, Víctor Semproni <b>(8)</b>, Juan C. Souza, Héctor Tajam, Hermes Toledo Antúnez, Daisy Tourné, Mónica Travieso, Jaime Mario Trobo, Carlos Varela Nestier, Alvaro Vega Llanes, Homero Viera y  Horacio Yanes.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Alvaro Alonso, Miguel Asqueta Sóñora, Manuel María Barreiro, Rodolfo Caram, Mauricio Cusano, David Doti Genta, Daniel García Pintos, Carlos Mazzulo, Jorge Romero Cabrera y  Gonzalo Texeira Gallardo.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Fernando García Pereyra, Pedro Orlando Lemes Pereira y  Mario Omar Pérez Silva.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Washington Abdala, José Luis Blasina, Eduardo Bonomi, Federico Casaretto, Silvana Charlone, Carlos Enciso Christiansen, Tabaré Hackenbruch Legnani, Fernando Longo Fonsalías, Daniel Peña Fernández, Adriana Peña Hernández, Alberto Perdomo Gamarra, Nelson Rodríguez Servetto y  Dardo Angel Sánchez Cal.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 12 del 03/02/2010';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Actúa en el Senado: Lucía Topolansky.<br><br><b>(1)</b> A la hora 16:14 comenzó licencia, ingresando en su lugar la Sra. Eleonora Bianchi.<br><b>(2)</b> A la hora 11:41comenzó licencia, ingresando en su lugar el Sr. Luis Batalla.<br><b>(3)</b> A la hora 16:14 comenzó licencia, ingresando en su lugar el Sr. Eduardo Márquez.<br><b>(4)</b> A la hora 10:43 comenzó licencia, ingresando en su lugar el Sr. Julio Battistoni.<br><b>(5)</b> A la hora 11:41 comenzó licencia, ingresando en su lugar el Sr. Carlos Corujo.<br><b>(6)</b> A la hora 12:06 comenzó licencia, ingresando en su lugar la Sra. Eloísa Moreira.<br><b>(7)</b> A la hora 16:14 comenzó licencia, ingresando en su lugar el  Sr. Julio Balmelli.<br><b>(8)</b> A la hora 16:23 comenzó licencia, ingresando en su lugar el Sr. Pablo Naya.<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/camara/20100203d0012.pdf" TARGET="_blank"><b>Sesión 12<br>Mi&#233;rcoles 3 de febrero de 2010</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Representantes: Pablo Abdala, Pablo Alvarez López, José Amorín, Beatriz Argimón, Roque Arregui, Miguel Asqueta Sóñora, Alfredo Asti, Carlos Baráibar, Luis Batalla Doufrechou, José Bayardi <b>(1)</b>, Gloria Benítez, Juan José Bentancor, Gustavo Bernini <b>(2)</b>, Daniel Bianchi, Eleonora Bianchi, José Luis Blasina, Eduardo Bonomi, Gustavo Borsari Brenna, Sergio Botana, Juan José Bruno, Rodolfo Caram, Daniel Eduardo Carbajal Laport, Germán Cardoso, José Carlos Cardoso, Federico Casaretto, Alberto Casas, Raúl Casás, Richard Charamelo, Silvana Charlone <b>(3)</b>, Hebert Clavijo, Alba M. Cocco Soto <b>(4)</b>, Roberto Conde, Carlos Corujo, Mauricio Cusano, Alvaro Delgado <b>(5)</b>, Juan José Domínguez, Gustavo A. Espinosa, Sandra Etcheverry, César Faraone, Julio César Fernández, Martín Fernández, Julio Fiordelmondo Dos Santos, Luis José Gallo Imperiale, Carlos Gamou <b>(6)</b>, Jorge Gandini, Javier García, Nora Gauthier, Rodrigo Goñi Romero, Carlos González Alvarez, Oscar Groba Arriondo, Gustavo Guarino, Uberfil Hernández, Doreen Javier Ibarra, Pablo Iturralde Viñas, Liliam Kechichián, Luis Alberto Lacalle Pou <b>(7)</b>, Orlando Darío Lereté Salcedo, Fernando Longo Fonsalías, Alvaro F. Lorenzo, Guido Machado, José Carlos Mahía, Rubén Martínez Huelmo, Carlos Maseda, Jorge Menéndez, Mario Ramón Mesa Pérez, Felipe Michelini, Gonzalo Mujica, Gonzalo Novales, Jorge Orrico, Edgardo Ortuño, Miguel Otegui Griego, Ivonne Passada <b>(8)</b>, Jorge Patrone, Daniela Payssé, Daniel Peña Fernández, Adriana Peña Hernández, Aníbal Pereyra, Esteban Pérez, Nelson Eduardo Pérez Cortelezzi, Pablo Pérez González, Juan José Piñeyrúa <b>(9)</b>, Iván Posada, Jorge Pozzi, Edgardo Rodríguez, Javier Salsamendi, Alberto Scavarelli, Víctor Semproni <b>(10)</b>, Juan C. Souza, Héctor Tajam, Hermes Toledo Antúnez, Lucía Topolansky <b>(11)</b>, Daisy Tourné, Mónica Travieso, Jaime Mario Trobo, Carlos Varela Nestier <b>(12)</b>, Alvaro Vega Llanes, Homero Viera, Horacio Yanes y  Jorge Zás Fernández.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Alvaro Alonso, Manuel María Barreiro, Julio Cardozo Ferreira, David Doti Genta, Daniel García Pintos, Tabaré Hackenbruch Legnani, Carlos Mazzulo, Jorge Romero Cabrera, Dardo Angel Sánchez Cal, Gonzalo Texeira Gallardo y  Oscar Zabaleta.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Washington Abdala, Bertil Bentos, Carlos Enciso Christiansen, Daniel Mañana, Alberto Perdomo Gamarra, Darío Pérez Brito, Enrique Pintado y  Luis Rosadilla.<br><br><b>(1)</b> A la hora 15:51 comenzó licencia, ingresando en su lugar la Sra. Eleonora Bianchi.<br><b>(2)</b> A la hora 15:51 comenzó licencia, ingresando en su lugar la Sra.  Gloria Benítez.<br><b>(3)</b> A la hora 16:53 comenzó licencia, ingresando en su lugar el Sr. Julio Fiordelmondo.<br><b>(4)</b> A la hora 16:43 comenzó licencia, ingresando en su lugar el Sr. Luis Batalla.<br><b>(5)</b> A la hora 18:45 comenzó licencia, ingresando en su lugar el Sr. Martín Fernández<br><b>(6)</b> A la hora 17:30 comenzó licencia, ingresando en su lugar el Sr. Daniel Carbajal.<br><b>(7)</b> A la hora 18:00 comenzó licencia, ingresando en su lugar el Sr. Orlando Lereté.<br><b>(8)</b> A la hora 16:43 comenzó licencia, ingresando en su lugar el Sr. Oscar Groba.<br><b>(9)</b> A la hora 18:10 cesó en sus funciones<br><b>(10)</b> A la hora 16:43 comenzó licencia, ingresando en su lugar el Sr. Mario Mesa.<br><b>(11)</b> A la hora 19:31 comenzó licencia, ingresando en su lugar el Sr. César Faraone.<br><b>(12)</b> A la hora 15:51 comenzó licencia, ingresando en su lugar el Sr. Juan C. Piñeyrúa; a la hora 18:10 se reintegra. A la hora 18:45 en virtud de una  nueva solicitud de licencia ingresa en su lugar el Sr. Jorge Zás Fernández.<br></div></td></tr></table><script language="JavaScript">
+	document.getElementById('prepage').style.display='none';
+</script></CENTER></DIV><BR><DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH=100% > 
+<TR>
+<TD VALIGN=TOP WIDHT=384>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT HEIGHT=1 BGCOLOR="#FFFFFF">
+<IMG SRC="../../../images/linea_n.gif" WIDHT=230 HEIGHT=10><BR>
+<font face="Arial Narrow" color="#408080" size=1>Montevideo, Uruguay. </font>
+<font face="Arial Narrow" size=1 color="#000000">Poder Legislativo.</font><br>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+</BODY>
+</HTML>

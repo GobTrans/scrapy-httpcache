@@ -1,0 +1,681 @@
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,1396671,4,0,0,0,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('http://s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1396671&101" alt="contador web" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+<script language="JavaScript">
+    <!--
+    window.moveTo(0,0);
+    self.focus();
+    -->
+</script>
+<SCRIPT LANGUAGE="JavaScript" SRC="../../../expandcollapse.js"></SCRIPT>
+
+<script type="text/javascript">
+var i, j, digiclock
+digiclock = "00:00:00";
+j = 0;
+function prog()
+{
+  document.getElementById("d1").innerHTML="";	
+  document.getElementById("d2").style.width=0;  
+  i=0;
+  progBar(); 
+}
+
+function progBar()
+{
+	if (i<=(500)) {
+		if (i>50) {
+			document.getElementById("d1").innerHTML=parseInt(i/5)+"%";
+		}
+		document.getElementById("d2").style.width=i+"px";
+		var j=0;		
+		while (j<=100)
+			j++;  
+		setTimeout("progBar();", 1000); 
+		i++;   
+	}
+	else {
+		if (document.getElementById('prepage').style.display != 'none') {
+			document.getElementById('prepage').style.display='none';
+			alert('Se excedió el tiempo máximo permitido para la consulta. Reitente en instantes por favor.');
+		}
+	}
+}
+
+function timer()
+{
+    var digiformat = "";
+	if(j>3599)
+	{
+		var H = Math.floor(j/3600);
+	}
+	else
+	{
+		var H = 0;
+	}
+	
+	var M = j - (H*3600)
+	
+	if(M>59)
+	{
+		M = Math.floor(M/60)
+	}
+	else
+	{
+		M = 0
+	}	
+	var S = j - (M*60)	
+	if(H<10)
+	{
+		H = "0"+H;
+	}
+	if(M<10)
+	{
+		M = "0"+M;
+	}
+	if(S<10)
+	{
+		S = "0"+S;
+	}
+	document.getElementById('time').innerHTML = H+":"+M+":"+S;
+    setTimeout('timer()', 1000);
+    j++;
+}
+</script>
+<!--div align=center id="prepage" style="filter:alpha(opacity=90);top:155px;position:absolute;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;"-->
+<div align=center id="prepage" style="position:absolute;top:142px;font-family:arial;font-size:11;background-color:white;height:100%;text-align:center;width:100%;text-decoration:none;">
+<center>
+    <img src="/dgip/images/pixel.gif" border="0" height="20"><br />
+    <table border="1" style="border-style:groove;border-width:thin;width:420px;border-color:Scrollbar;" ID="Table1" cellspacing="0">
+      <tr>
+	    <td align="center">
+	      <p><font face="Arial" size=2><strong>Sistema de Información Parlamentaria (SipXXI)</strong></font><br /><br />
+	      <img src="/dgip/images/cargandochico.gif" border="0" align=absmiddle /><font face="Arial" size=1><strong>&nbsp;Aguarde, la página por Ud consultada, está siendo procesada ....<br></font><font face="Arial" size=1><span id="time">90</span></font></p>
+	      <!--p><font face="Arial" size=1>Si tiene algún tipo de inconveniente al cargar esta página, le rogamos nos lo haga saber enviando un correo a <a href="mailto:webmaster@parlamento.gub.uy">webmaster@parlamento.gub.uy</a>. Muchas gracias.</font></p-->
+	    </td>
+      </tr>
+    </table>
+    <!--table border="1" cellpadding="1" cellspacing="0" width="50%" ID="Table2">  
+      <tr><td align=left>
+	    <div id="d2" style="position:relative;top:0px;left:0px;background-color:#408080;height:12px;width:0px;padding-top:5px;padding:0px;border-width:thin;">
+	    <div id="d1" style="position:relative;top:0px;left:0px;color:#f0ffff;height:12px;text-align:center;font:bold;padding:0px;padding-top:3px;border-width:thin;">
+	    </td>
+      </tr>
+    </table><br-->
+    <table border="0" cellpadding="1" cellspacing="0" width="65%">
+	    <tr><td align=left>
+		    <div id="MensajeProceso" style="display:none;position:relative;top:0px;left:0px;font-family:Arial;font-size:11px;color:#006699;height:11px;text-align:center;font-weight:bold;padding:0px;padding-top:3px;">&nbsp;</div>
+	    </td></tr>
+    </table><br>
+    <!--img src="/dgip/images/linea2.gif" border="0"><br /-->
+</center>
+</div>
+<!--script type="text/javascript">
+	prog();
+</script-->
+<script type="text/javascript">
+	timer();
+</script>
+<DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDERCOLORDARK="#000000" BORDERCOLORLIGHT="#000000" BORDERCOLOR="#FFFFFF">
+<TR>
+<TD VALIGN=TOP WIDTH="95%" ALIGN=CENTER BGCOLOR="#000000">
+<A HREF="javascript:window.close()">
+<IMG SRC="../../../images/cabcms.gif" ALT="Cerrar ventana" ALIGN=LEFT BORDER=0></A>
+</TD>
+
+<TD WIDTH="5%" ALIGN=CENTER VALIGN=CENTER BGCOLOR="#000000">
+<DIV ALIGN=CENTER><A HREF="javascript:void(printwindow())"><IMG SRC="../../../palacio3/img/b_print_2.gif" BORDER=0 TITLE="Imprimir página actual"></A></DIV>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP COLSPAN=2 WIDTH="100%" ALIGN=CENTER>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Inicializando ...';
+</script>
+<HTML>
+<HEAD>
+<META name="robots" content="noindex">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<META http-equiv="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT">
+<STYLE TYPE="text/css">
+<!--
+BODY {font:9pt Arial; color:black; font-weight:normal;}
+TBODY {font:9pt Arial; color:black; font-weight:normal;}
+A:link {font:9pt Arial;  color:#006699; font-weight:normal; text-decoration:none;}
+A:visited {font:9pt Arial; color:#006699; font-weight:normal; text-decoration:none;}
+H1 {font:14pt Arial; color:black; font-weight:bold;}
+H2 {font:12pt Arial; color:black; font-weight:bold;}
+H3 {font:9pt Arial; color:black; font-weight:bold;}
+H4 {font:7pt Arial; color:black; font-weight:bold;}
+.boton{background:#006699;color:#FFFFFF;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.box{background:#FFFFFF;color:#000000;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.select{background:#9FBCAB;color:#006699;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+-->
+</STYLE>
+<TITLE>
+Sistema de Informaci&#243;n Parlamentaria
+</TITLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="validate-date.js"></SCRIPT>
+<script language="JavaScript" src="../rightbutton.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#006699" VLINK="#006699" TEXT="#000000">
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Contabilizando Sesiones ...';
+</script>
+<CENTER>
+<STRONG><FONT SIZE=3>ASISTENCIA A SESIONES</FONT></STRONG>
+</CENTER><BR>
+<CENTER>
+<STRONG><FONT SIZE=1>Período considerado: 01/01/2007 - 31/12/2007<br>57 sesiones. (Incluye titulares y suplentes)</FONT></STRONG>
+</CENTER><BR>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Consultando Sesiones ...';
+</script>
+
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 63 del 10/01/2007';
+</script>
+<br><center><a href="/htmlstat/sesiones/pdfs/senado/20070110s0063.pdf" TARGET="_blank"><b>Sesión 63<br>Mi&#233;rcoles 10 de enero de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Walter Hugo Campanella, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Leonardo Nicolini, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Enrique Rubio, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Víctor Vaillant.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Ruperto Long.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 64 del 07/02/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Julio C. Lara Gilene y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070207s0064.pdf" TARGET="_blank"><b>Sesión 64<br>Mi&#233;rcoles 7 de febrero de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Gonzalo Aguirre Ramírez, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Juan José Domínguez, Francisco Gallinal, Jorge Gandini, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Leonardo Nicolini <b>(1)</b>, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Enrique Rubio, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 1 del 06/03/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Eleuterio Fernández Huidobro, Jorge Larrañaga y  Julio María Sanguinetti.<br><br><b>(1)</b> Renunciò a su banca a la hora 13.05, ingresa en su lugar como Senador titular el señlor  Alberto Breccia <br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070306s0001.pdf" TARGET="_blank"><b>Sesión 1<br>Martes 6 de marzo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Enrique Rubio, Jorge Saravia, Héctor Tajam, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: José Korzeniak.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 2 del 13/03/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro, Julio María Sanguinetti y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070313s0002.pdf" TARGET="_blank"><b>Sesión 2<br>Martes 13 de marzo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Enrique Rubio, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Eduardo Lorier y  Luis Oliver.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 3 del 14/03/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070314s0003.pdf" TARGET="_blank"><b>Sesión 3<br>Mi&#233;rcoles 14 de marzo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Ruben Obispo, Luis Oliver, Gustavo Penadés, Margarita Percovich, Enrique Rubio, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Eduardo Lorier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 4 del 20/03/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Susana Dalmás, Eleuterio Fernández Huidobro y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070320s0004.pdf" TARGET="_blank"><b>Sesión 4<br>Martes 20 de marzo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Enrique Rubio, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 5 del 28/03/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070328s0005.pdf" TARGET="_blank"><b>Sesión 5<br>Mi&#233;rcoles 28 de marzo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Francisco Gallinal.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 6 del 10/04/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Enrique Rubio <b>(1)</b> y  Julio María Sanguinetti.<br><br><b>(1)</b> Renuncio a la banca en el dia de la fecha a la hora 16.40<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070410s0006.pdf" TARGET="_blank"><b>Sesión 6<br>Martes 10 de abril de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Margarita Percovich, Ambrosio Rodríguez, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Eduardo Lorier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 7 del 11/04/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Gustavo Penadés y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070411s0007.pdf" TARGET="_blank"><b>Sesión 7<br>Mi&#233;rcoles 11 de abril de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Margarita Percovich, Ambrosio Rodríguez, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Luis Alberto Heber y  Eduardo Lorier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 8 del 17/04/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Gustavo Penadés y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070417s0008.pdf" TARGET="_blank"><b>Sesión 8<br>Martes 17 de abril de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Carlos Daniel Camy Antognazza, Nora Castro, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Luis Oliver, Gustavo Penadés, Margarita Percovich, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 9 del 18/04/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Rodolfo Nin Novoa, Eduardo Ríos y  Julio María Sanguinetti.<br><br><b>(1)</b> En ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070418s0009.pdf" TARGET="_blank"><b>Sesión 9<br>Mi&#233;rcoles 18 de abril de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Enrique Antía, Juan José Bentancor, Alberto Breccia Guzzo, Carlos Daniel Camy Antognazza, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Germán Lezama, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Isaac Alfie, Juan Justo Amaro Corrado y  Ruperto Long.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Carlos Baráibar y  Luis Alberto Heber.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 10 del 02/05/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Margarita Percovich, Eduardo Ríos y  Julio María Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070502s0010.pdf" TARGET="_blank"><b>Sesión 10<br>Mi&#233;rcoles 2 de mayo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Gonzalo Aguirre Ramírez, Isaac Alfie, Juan Justo Amaro Corrado, Milton Antognazza, Juan José Bentancor, Nora Castro, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Carlos Gamou, Arturo Heber Füllgraff, José Korzeniak, Manuel Laguarda, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Luis Rosadilla, Jorge Saravia y  Lucía Topolansky.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Enrique Antía y  Francisco Gallinal.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Alberto Breccia Guzzo, Luis Alberto Heber, Jorge Larrañaga, Julio María Sanguinetti, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 11 del 08/05/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Rodolfo Nin Novoa <b>(2)</b>.<br><br><b>(1)</b> En ejercicio de la Presidencia<br><b>(2)</b> En ejercicio de la Presidencia de la Republica<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070508s0011.pdf" TARGET="_blank"><b>Sesión 11<br>Martes 8 de mayo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, Pablo Iturralde Viñas, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Eduardo Ríos.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 12 del 09/05/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Ruperto Long, Rodolfo Nin Novoa y  Víctor Vaillant.<br><br><b>(1)</b> en ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070509s0012.pdf" TARGET="_blank"><b>Sesión 12<br>Mi&#233;rcoles 9 de mayo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 13 del 10/05/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Rodolfo Nin Novoa y  Víctor Vaillant.<br><br><b>(1)</b> en ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070510s0013.pdf" TARGET="_blank"><b>Sesión 13<br>Jueves 10 de mayo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Martín Aguirrezabala, Isaac Alfie y  Ruperto Long.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 14 del 15/05/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Eber Da Rosa, Rodolfo Nin Novoa y  Víctor Vaillant.<br><br><b>(1)</b> en ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070515s0014.pdf" TARGET="_blank"><b>Sesión 14<br>Martes 15 de mayo de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Milton Antognazza, Juan José Bentancor, Alberto Breccia Guzzo, Carlos Daniel Camy Antognazza, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, Pablo Iturralde Viñas, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Jorge Romero Cabrera, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Rodolfo Nin Novoa y  Eduardo Ríos.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Lucía Topolansky.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 15 del 05/06/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Juan Justo Amaro Corrado, Carlos Baráibar, Julio C. Lara Gilene, Ruperto Long y  Víctor Vaillant.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070605s0015.pdf" TARGET="_blank"><b>Sesión 15<br>Martes 5 de junio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, José Carlos Cardoso, Nora Castro, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Margarita Percovich, Eduardo Ríos, Jorge Romero Cabrera, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Luis Alberto Heber.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 16 del 06/06/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro, Julio C. Lara Gilene y  Gustavo Penadés.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070606s0016.pdf" TARGET="_blank"><b>Sesión 16<br>Mi&#233;rcoles 6 de junio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Nora Castro, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Jorge Romero Cabrera, Jorge Saravia, Víctor Semproni, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Luis Alberto Heber.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 17 del 12/06/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Breccia Guzzo, Eleuterio Fernández Huidobro, Julio C. Lara Gilene y  Julio María Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070612s0017.pdf" TARGET="_blank"><b>Sesión 17<br>Martes 12 de junio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Jorge Romero Cabrera, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Nora Castro.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 18 del 13/06/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro, Julio C. Lara Gilene y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070613s0018.pdf" TARGET="_blank"><b>Sesión 18<br>Mi&#233;rcoles 13 de junio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Nora Castro, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Jorge Romero Cabrera, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 19 del 26/06/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Cid, Eleuterio Fernández Huidobro, Julio C. Lara Gilene y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070626s0019.pdf" TARGET="_blank"><b>Sesión 19<br>Martes 26 de junio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Juan José Bentancor, Alberto Breccia Guzzo, Nora Castro, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 20 del 03/07/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar y  Eleuterio Fernández Huidobro.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070703s0020.pdf" TARGET="_blank"><b>Sesión 20<br>Martes 3 de julio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Romeo Pérez Antón, Carlos Ramela, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Larrañaga.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Julio C. Lara Gilene.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 21 del 03/07/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Isaac Alfie, Eleuterio Fernández Huidobro y  Francisco Gallinal.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070703s0021.pdf" TARGET="_blank"><b>Sesión 21<br>Martes 3 de julio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Romeo Pérez Antón, Carlos Ramela, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Larrañaga.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 22 del 17/07/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Isaac Alfie, Eleuterio Fernández Huidobro y  Francisco Gallinal.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070717s0022.pdf" TARGET="_blank"><b>Sesión 22<br>Martes 17 de julio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Walter Hugo Campanella, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, Pablo Iturralde Viñas, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Eduardo Lorier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Luis M. Leglise.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 23 del 31/07/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Cid, Eleuterio Fernández Huidobro, Julio C. Lara Gilene, Ruperto Long, Gustavo Penadés y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070731s0023.pdf" TARGET="_blank"><b>Sesión 23<br>Martes 31 de julio de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Eduardo Ríos, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Sergio Abreu.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 24 del 01/08/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Eber Da Rosa, Eleuterio Fernández Huidobro y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070801s0024.pdf" TARGET="_blank"><b>Sesión 24<br>Mi&#233;rcoles 1 de agosto de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu y  Eduardo Lorier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 25 del 07/08/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Eber Da Rosa y  Eleuterio Fernández Huidobro.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070807s0025.pdf" TARGET="_blank"><b>Sesión 25<br>Martes 7 de agosto de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Carlos Daniel Camy Antognazza, Alberto Cid, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 26 del 08/08/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Eber Da Rosa y  Eleuterio Fernández Huidobro.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070808s0026.pdf" TARGET="_blank"><b>Sesión 26<br>Mi&#233;rcoles 8 de agosto de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Carlos Daniel Camy Antognazza, Alberto Cid, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Larrañaga.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 27 del 14/08/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Eber Da Rosa, Eleuterio Fernández Huidobro y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070814s0027.pdf" TARGET="_blank"><b>Sesión 27<br>Martes 14 de agosto de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Walter Hugo Campanella, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 28 del 15/08/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado y  Julio C. Lara Gilene.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070815s0028.pdf" TARGET="_blank"><b>Sesión 28<br>Mi&#233;rcoles 15 de agosto de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Martín Aguirrezabala, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Walter Hugo Campanella, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado y  Julio C. Lara Gilene.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 29 del 21/08/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Rodolfo Nin Novoa <b>(2)</b>.<br><br><b>(1)</b> En ejercicio de la Presidencia<br><b>(2)</b> En ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070821s0029.pdf" TARGET="_blank"><b>Sesión 29<br>Martes 21 de agosto de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Walter Hugo Campanella, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, Pablo Iturralde Viñas, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 30 del 28/08/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Julio C. Lara Gilene, Ruperto Long y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070828s0030.pdf" TARGET="_blank"><b>Sesión 30<br>Martes 28 de agosto de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Walter Hugo Campanella, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, Pablo Iturralde Viñas, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu y  Rodolfo Nin Novoa.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 31 del 04/09/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Julio C. Lara Gilene y  Ruperto Long.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070904s0031.pdf" TARGET="_blank"><b>Sesión 31<br>Martes 4 de setiembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Juan Justo Amaro Corrado, Juan José Bentancor, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Rodolfo Nin Novoa, Eduardo Ríos y  Julio María Sanguinetti.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Larrañaga.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 32 del 05/09/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Sergio Abreu, Isaac Alfie, Enrique Antía, Carlos Baráibar, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070905s0032.pdf" TARGET="_blank"><b>Sesión 32<br>Mi&#233;rcoles 5 de setiembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Enrique Antía.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 33 del 11/09/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Cid y  Julio María Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070911s0033.pdf" TARGET="_blank"><b>Sesión 33<br>Martes 11 de setiembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Manuel Laguarda, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Luis Oliver, Gustavo Penadés, Margarita Percovich, Jorge Saravia, Héctor Tajam, Lucía Topolansky y  Víctor Vaillant.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Washington Abdala.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 34 del 12/09/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Cid, Rodolfo Nin Novoa, Eduardo Ríos, Julio María Sanguinetti y  Mónica Xavier.<br><br><b>(1)</b> En ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070912s0034.pdf" TARGET="_blank"><b>Sesión 34<br>Mi&#233;rcoles 12 de setiembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, José Carlos Cardoso, Alberto Couriel <b>(1)</b>, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, José Korzeniak, Manuel Laguarda, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Luis Oliver, Margarita Percovich, Jorge Saravia, Héctor Tajam, Lucía Topolansky y  Víctor Vaillant.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Luis Alberto Heber.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Washington Abdala.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 35 del 18/09/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Cid, Eleuterio Fernández Huidobro, Rodolfo Nin Novoa, Gustavo Penadés, Eduardo Ríos, Julio María Sanguinetti y  Mónica Xavier.<br><br><b>(1)</b> En ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20070918s0035.pdf" TARGET="_blank"><b>Sesión 35<br>Martes 18 de setiembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, José Andújar, Enrique Antía, Milton Antognazza, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Juan José Domínguez, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, José Korzeniak, Gustavo Javier Lapaz Correa, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Larrañaga.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Julio C. Lara Gilene.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Luis Alberto Heber, Lucía Topolansky y  Víctor Vaillant.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 36 del 02/10/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Rodolfo Nin Novoa.<br><br><b>(1)</b> En ejercicio de la Presidencia <br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071002s0036.pdf" TARGET="_blank"><b>Sesión 36<br>Martes 2 de octubre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Gonzalo Aguirre Ramírez, Isaac Alfie, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Carlos Moreira.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 37 del 03/10/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Juan Justo Amaro Corrado, Alberto Breccia Guzzo y  Jorge Larrañaga.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071003s0037.pdf" TARGET="_blank"><b>Sesión 37<br>Mi&#233;rcoles 3 de octubre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Isaac Alfie, José Amorín, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Carlos Daniel Camy Antognazza, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Manuel Laguarda, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Víctor Vaillant.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 38 del 09/10/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Juan Justo Amaro Corrado, Alberto Breccia Guzzo y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071009s0038.pdf" TARGET="_blank"><b>Sesión 38<br>Martes 9 de octubre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Juan José Bentancor, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Manuel Laguarda, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Eduardo Ríos, Luis Rosadilla, Jorge Saravia, Lucía Topolansky y  Víctor Vaillant.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Sergio Abreu.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 39 del 16/10/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Alberto Breccia Guzzo, Eleuterio Fernández Huidobro, Jorge Larrañaga, Julio María Sanguinetti y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071016s0039.pdf" TARGET="_blank"><b>Sesión 39<br>Martes 16 de octubre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, Gustavo Javier Lapaz Correa, Ruperto Long, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Jorge Romero Cabrera, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 40 del 17/10/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro, José Korzeniak, Julio C. Lara Gilene, Jorge Larrañaga, Eduardo Ríos y  Julio María Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071017s0040.pdf" TARGET="_blank"><b>Sesión 40<br>Mi&#233;rcoles 17 de octubre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, Gustavo Javier Lapaz Correa, Ruperto Long, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Jorge Romero Cabrera, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 41 del 23/10/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro, José Korzeniak, Julio C. Lara Gilene, Jorge Larrañaga, Eduardo Ríos y  Julio María Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071023s0041.pdf" TARGET="_blank"><b>Sesión 41<br>Martes 23 de octubre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Walter Hugo Campanella, Carlos Daniel Camy Antognazza, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro, Francisco Gallinal, Luis Alberto Heber, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Sara López, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Gustavo Penadés, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Alberto Cid, Eduardo Lorier y  Eduardo Ríos.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 42 del 06/11/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, José Korzeniak y  Julio C. Lara Gilene.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071106s0042.pdf" TARGET="_blank"><b>Sesión 42<br>Martes 6 de noviembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Nora Castro, Alberto Cid, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Margarita Percovich, Ambrosio Rodríguez, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 43 del 07/11/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Couriel, Eleuterio Fernández Huidobro, Gustavo Penadés, Eduardo Ríos y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071107s0043.pdf" TARGET="_blank"><b>Sesión 43<br>Mi&#233;rcoles 7 de noviembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Luis Oliver, Margarita Percovich, Ambrosio Rodríguez, Luis Rosadilla, Julio María Sanguinetti, Jorge Saravia, Víctor Vaillant <b>(1)</b> y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan sin aviso: Nora Castro y  Héctor Tajam.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Couriel, Eleuterio Fernández Huidobro, Gustavo Penadés, Eduardo Ríos y  Lucía Topolansky.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 44 del 14/11/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Rodolfo Nin Novoa <b>(2)</b>.<br><br><b>(1)</b> En ejercicio de la Presidencia<br><b>(2)</b> En ejercicio de la Presidencia de la República<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071114s0044.pdf" TARGET="_blank"><b>Sesión 44<br>Mi&#233;rcoles 14 de noviembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Nora Castro, Eber Da Rosa, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, José L. Oliver, Gustavo Penadés, Margarita Percovich, Javier Salsamendi, Julio María Sanguinetti, Jorge Saravia, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Cid, Alberto Couriel, Eduardo Ríos y  Lucía Topolansky.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 45 del 20/11/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Rodolfo Nin Novoa <b>(2)</b>.<br><br><b>(1)</b> En ejercicio de la Presidencia<br><b>(2)</b> En ejercicio de la Presidencia de la República<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071120s0045.pdf" TARGET="_blank"><b>Sesión 45<br>Martes 20 de noviembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Eleuterio Fernández Huidobro <b>(1)</b>, Francisco Gallinal, Carlos Gamou, Jorge Gandini, Luis Alberto Heber, Pablo Iturralde Viñas, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, José L. Oliver, Gustavo Penadés, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Víctor Vaillant.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Ruperto Long, Eduardo Ríos y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 46 del 21/11/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Rodolfo Nin Novoa <b>(2)</b>.<br><br><b>(1)</b> En ejercicio de la Presidencia<br><b>(2)</b> En ejercicio de la Presidencia<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071121s0046.pdf" TARGET="_blank"><b>Sesión 46<br>Mi&#233;rcoles 21 de noviembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel <b>(1)</b>, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Jorge Gandini, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, José L. Oliver, Daniel Peña Fernández, Gustavo Penadés, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky y  Víctor Vaillant.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Eleuterio Fernández Huidobro, Ruperto Long, Eduardo Ríos y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 47 del 27/11/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;En ejercicio de la Presidencia de la República: Rodolfo Nin Novoa <b>(2)</b>.<br><br><b>(1)</b> En ejercicio de la Presidencia<br><b>(2)</b> En ejercicio de la Presidencia de la República<br></div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071127s0047.pdf" TARGET="_blank"><b>Sesión 47<br>Martes 27 de noviembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Juan José Bentancor, Alberto Breccia Guzzo, Walter Hugo Campanella, Carlos Daniel Camy Antognazza, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, José L. Oliver, Gustavo Penadés, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 48 del 04/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Sergio Abreu, Carlos Baráibar, Eleuterio Fernández Huidobro, Julio C. Lara Gilene y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071204s0048.pdf" TARGET="_blank"><b>Sesión 48<br>Martes 4 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, José L. Oliver, Gustavo Penadés, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Víctor Vaillant.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 49 del 05/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eleuterio Fernández Huidobro, Eduardo Ríos y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071205s0049.pdf" TARGET="_blank"><b>Sesión 49<br>Mi&#233;rcoles 5 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, José L. Oliver, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky y  Víctor Vaillant.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 50 del 11/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Carlos Baráibar, Eber Da Rosa, Eleuterio Fernández Huidobro, Eduardo Ríos y  Mónica Xavier.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071211s0050.pdf" TARGET="_blank"><b>Sesión 50<br>Martes 11 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Juan José Domínguez, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Julio María Sanguinetti, Jorge Saravia, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 51 del 12/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Eleuterio Fernández Huidobro, Eduardo Ríos y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071212s0051.pdf" TARGET="_blank"><b>Sesión 51<br>Mi&#233;rcoles 12 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, José Carlos Cardoso, Alberto Cid, Alberto Couriel, Susana Dalmás, Juan José Domínguez, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Julio María Sanguinetti, Jorge Saravia, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 52 del 13/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Eleuterio Fernández Huidobro, Gustavo Javier Lapaz Correa, Eduardo Ríos y  Lucía Topolansky.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071213s0052.pdf" TARGET="_blank"><b>Sesión 52<br>Jueves 13 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Isaac Alfie, Juan Justo Amaro Corrado, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Sara López, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Julio María Sanguinetti, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faltan con aviso: Sergio Abreu, Enrique Antía, Jorge Larrañaga y  Alberto Perdomo Gamarra.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 53 del 18/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Eber Da Rosa, Eleuterio Fernández Huidobro, José Korzeniak y  Eduardo Ríos.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071218s0053.pdf" TARGET="_blank"><b>Sesión 53<br>Martes 18 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Couriel, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Carlos Ramela, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 54 del 18/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Isaac Alfie, Alberto Cid, Eber Da Rosa, Eleuterio Fernández Huidobro, Eduardo Ríos y  Julio María Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071218s0054.pdf" TARGET="_blank"><b>Sesión 54<br>Martes 18 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Juan Justo Amaro Corrado, Enrique Antía, Milton Antognazza, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Ruperto Long, Eduardo Lorier, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Alberto Perdomo Gamarra, Carlos Ramela, Jorge Saravia, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Jorge Larrañaga.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta sin aviso: Alberto Couriel.
+	<script type="text/javascript">
+		document.getElementById("MensajeProceso").style.display = 'none';
+	</script>		 
+	<script type="text/javascript">
+document.getElementById("MensajeProceso").style.display = 'block';
+document.getElementById("MensajeProceso").innerHTML = 'Procesando Sesiones ...<br>Sesión: 55 del 27/12/2007';
+</script>
+<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Isaac Alfie, Alberto Cid, Eber Da Rosa, Eleuterio Fernández Huidobro, Eduardo Ríos y  Julio María Sanguinetti.</div></td></tr></table><br><center><a href="/htmlstat/sesiones/pdfs/senado/20071227s0055.pdf" TARGET="_blank"><b>Sesión 55<br>Jueves 27 de diciembre de 2007</b></a><table width=95% border=0><tr><td valign=top align=left><div align=justify>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Asisten los señores Senadores: Washington Abdala, Sergio Abreu, Isaac Alfie, Juan Justo Amaro Corrado, Enrique Antía, Carlos Baráibar, Juan José Bentancor, Alberto Breccia Guzzo, Alberto Cid, Eber Da Rosa, Susana Dalmás, Francisco Gallinal, Carlos Gamou, Luis Alberto Heber, José Korzeniak, Gustavo Javier Lapaz Correa, Julio C. Lara Gilene, Jorge Larrañaga, Ruperto Long, Rafael Michelini, Carlos Moreira, Rodolfo Nin Novoa, Luis Oliver, Gustavo Penadés, Margarita Percovich, Jorge Saravia, Héctor Tajam, Lucía Topolansky, Víctor Vaillant y  Mónica Xavier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Falta con aviso: Eduardo Lorier.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Con licencia: Alberto Couriel, Eleuterio Fernández Huidobro, Eduardo Ríos y  Julio María Sanguinetti.</div></td></tr></table><script language="JavaScript">
+	document.getElementById('prepage').style.display='none';
+</script></CENTER></DIV><BR><DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH=100% > 
+<TR>
+<TD VALIGN=TOP WIDHT=384>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT HEIGHT=1 BGCOLOR="#FFFFFF">
+<IMG SRC="../../../images/linea_n.gif" WIDHT=230 HEIGHT=10><BR>
+<font face="Arial Narrow" color="#408080" size=1>Montevideo, Uruguay. </font>
+<font face="Arial Narrow" size=1 color="#000000">Poder Legislativo.</font><br>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+</BODY>
+</HTML>

@@ -1,0 +1,134 @@
+
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,1396671,4,0,0,0,00000000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('http://s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?1396671&101" alt="contador web" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+<script language="JavaScript">
+    <!--
+    window.moveTo(0,0);
+    self.focus();
+    -->
+</script>
+<SCRIPT LANGUAGE="JavaScript" SRC="../../../expandcollapse.js"></SCRIPT>
+<DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH="100%" CELLPADDING=0 CELLSPACING=0 BORDERCOLORDARK="#000000" BORDERCOLORLIGHT="#000000" BORDERCOLOR="#FFFFFF">
+<TR>
+<TD VALIGN=TOP WIDTH="95%" ALIGN=CENTER BGCOLOR="#000000">
+<A HREF="javascript:window.close()">
+<IMG SRC="../../../images/cabcmr.gif" ALT="Cerrar ventana" ALIGN=LEFT BORDER=0></A>
+</TD>
+
+<TD WIDTH="5%" ALIGN=CENTER VALIGN=CENTER BGCOLOR="#000000">
+<DIV ALIGN=CENTER><A HREF="javascript:void(printwindow())"><IMG SRC="../../../palacio3/img/b_print_2.gif" BORDER=0 TITLE="Imprimir página actual"></A></DIV>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP COLSPAN=2 WIDTH="100%" ALIGN=CENTER>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV><HTML>
+<HEAD>
+<META name="robots" content="noindex">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META http-equiv="Pragma" content="no-cache">
+<META http-equiv="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT">
+<STYLE TYPE="text/css">
+<!--
+BODY {font:9pt Arial; color:black; font-weight:normal;}
+TBODY {font:9pt Arial; color:black; font-weight:normal;}
+A:link {font:9pt Arial;  color:#006699; font-weight:normal; text-decoration:none;}
+A:visited {font:9pt Arial; color:#006699; font-weight:normal; text-decoration:none;}
+H1 {font:14pt Arial; color:black; font-weight:bold;}
+H2 {font:12pt Arial; color:black; font-weight:bold;}
+H3 {font:9pt Arial; color:black; font-weight:bold;}
+H4 {font:7pt Arial; color:black; font-weight:bold;}
+.boton{background:#006699;color:#FFFFFF;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.box{background:#FFFFFF;color:#000000;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+.select{background:#9FBCAB;color:#006699;font-family:Tahoma,Arial,Helvetica,Verdana;font-size:8pt;font-weight:bold;}
+-->
+</STYLE>
+<TITLE>
+Sistema de Informaci&#243;n Parlamentaria
+</TITLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="validate-date.js"></SCRIPT>
+<script language="JavaScript" src="../rightbutton.js"></script>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" LINK="#006699" VLINK="#006699" TEXT="#000000">
+<CENTER>
+<STRONG><FONT SIZE=3>ASISTENCIA A SESIONES</FONT></STRONG>
+
+   <br /><br /><IMG SRC="../../../images/linea2.gif" WIDTH=124 HEIGHT=8 BORDER=0 ALT="">
+   <BR><STRONG><FONT SIZE=1>Legislatura XLVIIa.</FONT></STRONG>
+</CENTER><BR>
+<CENTER>
+<FORM METHOD=POST ACTION="ConsAsistenciabrief.asp" TARGET="_self" NAME="Form1" onSubmit="window.status='Aguarde, seleccionando rango de fechas ...'">
+<STRONG><FONT SIZE=-2 COLOR="#006699">Rango de Fechas</FONT></STRONG><BR>
+<INPUT TYPE=TEXT SIZE=8 MAXLENGTH=8 NAME="FecDesde" VALUE="" onBlur="checkdate(this)">
+<INPUT TYPE=TEXT SIZE=8 MAXLENGTH=8 NAME="FecHasta" VALUE="" onBlur="checkdate(this)"><BR>
+<INPUT TYPE=HIDDEN SIZE=1 MAXLENGTH=1 NAME="Cuerpo" VALUE="D">
+<INPUT TYPE=HIDDEN SIZE=8 MAXLENGTH=8 NAME="Ini" VALUE="15022010">
+<INPUT TYPE=HIDDEN SIZE=8 MAXLENGTH=8 NAME="Fin" VALUE="01032012">
+<INPUT TYPE=HIDDEN SIZE=2 MAXLENGTH=2 NAME="Legislatura" VALUE="47">
+<FONT SIZE=-2 COLOR="#006699">(ddmmaaaa)</FONT><BR><BR>
+<INPUT TYPE=HIDDEN NAME="Fechas" VALUE="Seleccionado">
+<FONT SIZE=1>Rango de asistencias disponibles para el Cuerpo en la Legislatura: 15/02/2010 - 01/03/2012</FONT><BR><BR>
+   <INPUT TYPE=SUBMIT CLASS="boton" VALUE="Confirmar" onClick="return doDateCheckRango(Form1, Form1.FecDesde, Form1.FecHasta, Form1.Ini, Form1.Fin)" id=IMAGE1 name=IMAGE1><BR>
+   </FORM>
+</CENTER>
+<script language="JavaScript">
+<!--
+document.Form1.FecDesde.focus();
+// -->
+</script>
+
+
+   <DIV ALIGN=CENTER><CENTER>
+  <a href="javascript:;" onMouseOver="javascript:window.status=''; return true;" onClick="showhide('ProcesoConvocatoria');" title="Asistencia a Sesiones del Cuerpo" class="hiper3"><font size=2 face="Arial"><B><U>Proceso de convocatoria de suplentes al plenario</U></B></FONT></a><BR><BR>
+  </CENTER></DIV>
+  <DIV ALIGN=JUSTIFY id="ProcesoConvocatoria" style="display: none;">
+   <!--
+   De acuerdo a lo dispuesto por la Ley Nº <a href="/leyes/ley10618.htm" target="_blank">10.618</a> el Legislador dispone de 
+   nueve meses (270 días corridos) de licencia por Legislatura con goce de remuneración, por las siguientes causales 
+   determinadas por la Ley Nº <a href="/leyes/ley16465.htm" target="_blank">16.465</a>: enfermedad, misión oficial, obligaciones notorias, 
+   (inherentes a su representación política) o motivos personales.<BR>
+   Asimismo no se incluyen en dicho cómputo, hsta 30 días corridos, sin expresión de causa, sin goce de remuneración.<BR>
+   Tampoco se computan en los 270 días referidos, los períodos en los que le corresponda al Diputado desempeñarse sustituyendo a un Senador 
+   en su función.<BR>
+   Con respecto a la causal de motivos personales, debe establecerse que el señor Representante dispone de 30 días corridos por cada período legislativo (150 días corridos), que se computan tal como se señaló dentro de los 270 días totales que la Ley autoriza.
+   -->
+   De acuerdo a lo dispuesto por la Ley Nº <a href="/leyes/ley10618.htm" target="_blank">10.618</a>, en la redacción dada por la Ley No. <a href="/leyes/ley13811.htm" target="_blank">13.811</a>, el Legislador dispone de nueve meses (270 días corridos) de licencia por Legislatura con goce de remuneración. Las causales están determinadas por la Ley Nº <a href="/leyes/ley16465.htm" target="_blank">16.465</a>, en la redacción dada por la Ley No. <a href="/leyes/ley17827.htm" target="_blank">17.827</a> y son las siguientes: A) Enfermedad, B) Maternidad o paternidad, C) Misión oficial y D) Ausencia en virtud de obligaciones notorias, cuyo cumplimiento sea de interés público, inherentes a su investidura académica o representación política dentro o fuera del país.<br>
+   Asimismo, no se incluyen en dicho cómputo, hasta 30 días corridos, sin expresión de causa, sin goce de remuneración.<br>
+   Tampoco se computan en los 270 días referidos, los períodos en los que le corresponda al Diputado desempeñarse sustituyendo a un Senador en su función.<br>
+   Con respecto a la causal de motivos personales, debe establecerse que el señor Representante dispone de 30 días corridos por cada período legislativo (150 días corridos), que se computan tal como se señaló dentro de los 270 días totales que autorizan las normas vigentes.<br>
+   Las licencias cesan automáticamente con el reintegro del titular. En caso de licencias por períodos menores a quince días, que se otorguen al amparo de las causales A), D) o ante ausencia por motivos personales, los suplentes de Senadores y Representantes percibirán su asignación por los días en que sean convocados por las respectivas Cámaras, o las comisiones de los respectivos Cuerpos legislativos de la cual el titular sea miembro, a sesiones ordinarias o extraordinarias y quede establecida su asistencia.<br>
+   En caso de licencias que comprendan total o parcialmente el receso de la Asamblea General, sólo se convocará a los suplentes cuando cada una de las Cámaras, la Asamblea General o las Comisiones de los respectivos Cuerpos Legislativos fueran convocadas a sesiones extraordinarias
+   </DIV>
+   </CENTER></DIV><BR><DIV ALIGN=CENTER><CENTER>
+<TABLE WIDTH=100% > 
+<TR>
+<TD VALIGN=TOP WIDHT=384>
+<IMG SRC="../../../images/pixel.gif" WIDTH=1 HEIGHT=15>
+</TD>
+</TR>
+<TR>
+<TD VALIGN=TOP ALIGN=LEFT HEIGHT=1 BGCOLOR="#FFFFFF">
+<IMG SRC="../../../images/linea_n.gif" WIDHT=230 HEIGHT=10><BR>
+<font face="Arial Narrow" color="#408080" size=1>Montevideo, Uruguay. </font>
+<font face="Arial Narrow" size=1 color="#000000">Poder Legislativo.</font><br>
+</TD>
+</TR>
+</TABLE>
+</CENTER></DIV>
+</BODY>
+</HTML>
